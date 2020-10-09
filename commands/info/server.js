@@ -5,12 +5,12 @@ module.exports = {
   category: "info",
   description: "Get the info of any server",
   run: async (client, message, args) => {
-    if (message.guild.premiumTier === "Level 0") message.guild.premiumTier = "<:Level0:734479590852132905> 0"
-    if (message.guild.premiumTier === "Level 1") message.guild.premiumTier = "<:713173920475381830:734479841629437982> 1"
-    if (message.guild.premiumTier === "Level 2") message.guild.premiumTier = "<:713173919418548257:734479792052764774> 2"
-    if (message.guild.premiumTier === "Level 3") message.guild.premiumTier = "<:BoostLevel3:734479712029769849> 3"
+    if (message.guild.premiumTier === "Level 0") message.guild.premiumTier = "0"
+    if (message.guild.premiumTier === "Level 1") message.guild.premiumTier = "1"
+    if (message.guild.premiumTier === "Level 2") message.guild.premiumTier = "2"
+    if (message.guild.premiumTier === "Level 3") message.guild.premiumTier = "3"
     
-    if (message.guild.region === "india") message.guild.region = "🇮🇳 India"
+    if (message.guild.region === "india") message.guild.region = "<a:India:764200316156510218> India"
     if (message.guild.region === "brazil") message.guild.region = "🇧🇷 Brazil"
     if (message.guild.region === "japan") message.guild.region = "🇯🇵 Japan"
     if (message.guild.region === "russia") message.guild.region = "🇷🇺 Russia"
@@ -35,41 +35,41 @@ module.exports = {
       .setDescription(
         `
 <a:vshield:764199958257336321> **OWNER**
-${message.guild.owner.user.tag}
+<a:q1:764200105786998815> ${message.guild.owner.user.tag}
 
 <a:vshield:764199958257336321> **SERVER ID**
-${message.guild.id}
+<a:q1:764200105786998815> ${message.guild.id}
 
 <a:vshield:764199958257336321> **REGION**
-${message.guild.region}
+<a:q1:764200105786998815> ${message.guild.region}
 
 <a:vshield:764199958257336321> **TOTAL MEMBERS**
-${message.guild.memberCount}
+<a:q1:764200105786998815> ${message.guild.memberCount}
 
 <a:vshield:764199958257336321> **TOTAL CHANNELS **
-${message.guild.channels.cache.size}
+<a:q1:764200105786998815> ${message.guild.channels.cache.size}
 
 <a:vshield:764199958257336321> **TOTAL ROLES**
-${message.guild.roles.cache.size}
+<a:q1:764200105786998815> ${message.guild.roles.cache.size}
 
 <a:vshield:764199958257336321> **TOTAL EMOJI **
-${message.guild.emojis.cache.size}
+<a:q1:764200105786998815> ${message.guild.emojis.cache.size}
 
 <a:vshield:764199958257336321> **SERVER CREATED AT**
-${message.guild.createdAt}
+<a:q1:764200105786998815> ${message.guild.createdAt}
 
 <a:vshield:764199958257336321> **SERVER BOOST**
-${message.guild.premiumSubscriptionCount}
+<a:q1:764200105786998815> ${message.guild.premiumSubscriptionCount}
 
 <a:vshield:764199958257336321> **BOOST LEVEL**
-${boostlevel}
+<a:q1:764200105786998815> ${boostlevel}
 
 <a:vshield:764199958257336321> **Security** 
-${message.guild.verificationLevel}
+<a:q1:764200105786998815> ${message.guild.verificationLevel}
 `)
-      .setThumbnail(message.guild.iconURL())
+      
       .setImage(message.guild.iconURL({dynamic: true, size: 1024}))
-      .setColor("RANDOM")
+      .setColor("#00ff00")
       .setFooter(message.guild)
 
     message.channel.send(embed);
