@@ -34,7 +34,7 @@ joke,
 kpop,
 math,
 meme,
-mw,\`
+mw\`
 
 __**INFORMATION COMMANDS**__ <a:load:764201016287559712>
 \`avatar,
@@ -61,33 +61,35 @@ nowplaying,
 queue,
 volume\`
 
-__**NSFW COMMANDS**__ 
+__**NSFW COMMANDS**__ <a:Cross:764209193790996512>
 \`haa ye krlo phle\`
 
-__**WELCOME COMMANDS**__ 🎉
-\`setwelcome,setmessage\`
+__**WELCOME COMMANDS**__ <a:welcome:764200994837758022>
+\`setwelcome,
+setmessage\`
 
-__**SPECIAL COMMANDS**__ 👑
+__**SPECIAL COMMANDS**__ <a:party:764200631803838545>
 \`giveaway,
 math,
 announce,
 emoji,
 weather \`
 
-__**CORONA COMMANDS**__ ⚠️
-\`corona all, corona<country>\`
+__**CORONA COMMANDS**__ <a:heartbreak:764210242636349441>
+\`corona all, 
+corona <country>\`
  
 If any contact is not working contact the bot owner
 `
       )
 
       .setThumbnail(client.user.displayAvatarURL())
-      .setColor("#35CB31")
-      .setFooter(`HELP MENU `)
+      .setColor("RANDOM")
+      .setFooter(`ShaDoW `)
       .setTimestamp((message.timestamp = Date.now()));
 
     await message.channel.send(embed);
 
-    message.react("🌀");
+    message.react("<a:India:764200316156510218>");
   }
 };

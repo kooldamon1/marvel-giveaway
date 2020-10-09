@@ -25,7 +25,7 @@ client.on("ready", async () => {
             let Status = Math.floor(Math.random() * status.length);
 
             client.user.setActivity(status[Status], {
-                type: "PLAYING"
+                type: "WATCHING"
             });
         };
         setInterval(pickStatus, 5000);
@@ -33,10 +33,6 @@ client.on("ready", async () => {
     catch (err) {
         console.log(err);
     }
-  
-  client.user.setActivity(`ShaDoW Op ╏ sshelp for commands`, {
-    type: "WATCHING"
-  });
 });
 
 client.on("message", async message => {
