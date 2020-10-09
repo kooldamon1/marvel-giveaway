@@ -5,10 +5,10 @@ module.exports = {
   category: "info",
   description: "Get the info of any server",
   run: async (client, message, args) => {
-    if (message.guild.premiumTier === "Level 0") message.guild.premiumTier = "0"
-    if (message.guild.premiumTier === "Level 1") message.guild.premiumTier = "1"
-    if (message.guild.premiumTier === "Level 2") message.guild.premiumTier = "2"
-    if (message.guild.premiumTier === "Level 3") message.guild.premiumTier = "3"
+    if (message.guild.premiumTier === "Level 0") message.guild.premiumTier = "<a:NitroBooster_:764236018135203861> 0"
+    if (message.guild.premiumTier === "Level 1") message.guild.premiumTier = "<a:B_BoostKar:764235739814166571> 1"
+    if (message.guild.premiumTier === "Level 2") message.guild.premiumTier = "<a:VLG_boost:764235935952273438> 2"
+    if (message.guild.premiumTier === "Level 3") message.guild.premiumTier = "<a:boost:764236056697503805> 3"
     
     if (message.guild.region === "india") message.guild.region = "<a:India:764200316156510218> India"
     if (message.guild.region === "brazil") message.guild.region = "🇧🇷 Brazil"
