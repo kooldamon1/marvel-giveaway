@@ -78,7 +78,7 @@ __**Commands List**__
         await handleVideo(video2, msg, voiceChannel, true); // eslint-disable-line no-await-in-loop
       }
       return msg.channel.send(
-        `🎧 **|**  Playlist: **\`${playlist.title}\`** has been added to the queue!`
+        `<a:musicau:764209002741235745> **|**  Playlist: **\`${playlist.title}\`** has been added to the queue!`
       );
     } else {
       try {
@@ -179,7 +179,7 @@ Please provide a value to select one of the search results ranging from 1-10.
         "There is nothing playing that I could **`skip`** for you."
       );
     serverQueue.connection.dispatcher.end("Skip command has been used!");
-    return msg.channel.send("⏭️  **|**  Skip command has been used!");
+    return msg.channel.send("<a:q1:764200105786998815>   **|**  Skip command has been used!");
   } else if (command === "stop") {
     if (!msg.member.voice.channel)
       return msg.channel.send(
@@ -212,7 +212,7 @@ Please provide a value to select one of the search results ranging from 1-10.
   } else if (command === "nowplaying" || command === "np") {
     if (!serverQueue) return msg.channel.send("There is nothing playing.");
     return msg.channel.send(
-      `🎶  **|**  Now Playing: **\`${serverQueue.songs[0].title}\`**`
+      `<a:MusiC:764240569723387934>  **|**  Now Playing: **\`${serverQueue.songs[0].title}\`**`
     );
   } else if (command === "queue" || command === "q") {
     if (!serverQueue) return msg.channel.send("There is nothing playing.");
@@ -287,7 +287,7 @@ async function handleVideo(video, msg, voiceChannel, playlist = false) {
     if (playlist) return;
     else
       return msg.channel.send(
-        `🎧 **|** **\`${song.title}\`** has been added to the queue!`
+        `<a:musicau:764209002741235745> **|** **\`${song.title}\`** has been added to the queue!`
       );
   }
   return;
@@ -316,7 +316,7 @@ function play(guild, song) {
   serverQueue.textChannel.send({
     embed: {
       color: "RANDOM",
-      description: `🎶  **|**  Start Playing: **\`${song.title}\`**`
+      description: `<a:MusiC:764240569723387934>  **|**  Start Playing: **\`${song.title}\`**`
     }
   });
 }
