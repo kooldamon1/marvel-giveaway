@@ -6,8 +6,8 @@ module.exports = {
   description: "INVITE SENPAI",
   run: async (client, message, args) => {
     let embed = new discord.MessageEmbed()
-      .setTitle(`__**INFORMATION ABOUT BOT**__`)
-      .addField("BOT NAME", `ACE TERMINATOR`)
+      .setTitle(`__**INFORMATION ABOUT BOT**__ <a:2628_rainbowdown:764201083068743710>`)
+      .addField("BOT NAME", `SHADOW OFFICIAL™`)
       .addField(
         "BOT DEVELOPER ",
         `
@@ -17,10 +17,10 @@ module.exports = {
       .addField("TOTAL SERVER", `${client.guilds.cache.size}`, true)
       .addField("TOTAL CHANNAL", `${client.channels.cache.size}`)
       .addField("TOTAL USER", `${client.users.cache.size}`, true)
-      .addField("BOT LIBRARY", `discord.py`)
+      .addField("BOT LIBRARY", `discord.js`)
 
       .setColor("RANDOM")
-      .setFooter(`BOT CREDIT :- Shadow & Venom`);
+      .setFooter(`BOT CREDIT :- ShaDoW & VeNoM`);
 
     message.channel.send(embed);
   }
