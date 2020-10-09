@@ -10,7 +10,7 @@ module.exports = {
       .setDescription(
         `
 __**MODERATION COMMANDS**__ 🔧
-\addrole,
+\`addrole,
 removerole,
 clear[purge],
 ban,
@@ -21,7 +21,7 @@ unmute,
 slowmode,
 warn,
 warnings,
-resetwarns\
+resetwarns\`
 
 __**FUN COMMANDS**__ 🙃
 \`advice,
