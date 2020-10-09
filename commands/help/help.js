@@ -1,4 +1,5 @@
 const discord = require("discord.js");
+const client = new discord.Client();
 
 module.exports = {
   name: "help",
@@ -85,11 +86,11 @@ If any contact is not working contact the bot owner
 
       .setThumbnail(client.user.displayAvatarURL())
       .setColor("RANDOM")
-      .setFooter(`ShaDoW `)
+      .setFooter(`ShaDoW Op`)
       .setTimestamp((message.timestamp = Date.now()));
 
     await message.channel.send(embed);
 
-    message.react("<a:India:764200316156510218>");
+    message.react(client.emojis.cache.get("764200316156510218"));
   }
 };

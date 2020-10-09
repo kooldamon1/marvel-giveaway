@@ -80,11 +80,11 @@ client.on("guildMemberAdd", async (member) => {
  | BE SURE THAT YOU HAVE READ    
            | 
 ━━━━━━━━━━━━━━━━━━━━━━━━
- | username ${member.username}  
-|your rank is ${member.member_count}  ━━━━━━━━━━━━━━━━━━━━━━━━
+ | Usernam ${member.username}  
+ | Your Rank Is ${member.member_count}  ━━━━━━━━━━━━━━━━━━━━━━━━
  | YOU CAN ENJOY IN  CHATTING 
 ━━━━━━━━━━━━━━━━━━━━━━━━
-            THANKS FOR JOINING US
+        THANKS FOR JOINING US
 `
   
   let m1 = db.get(`msg_${member.guild.id}`)
