@@ -18,10 +18,10 @@ module.exports = {
         target = message.author
       }
     
-    if (target.presence.status === "dnd") target.presence.status = "Do Not Disturb <:dnd:746684327177486396>";
-    if (target.presence.status === "idle") target.presence.status = "Idle <:idle:746684759157243994>";
-    if (target.presence.status === "online") target.presence.status = "Online <:Online:746685017681559622>";
-    if (target.presence.status === "offline") target.presence.status = "Offline <:offline:746685581702201364>";
+    if (target.presence.status === "dnd") target.presence.status = "Do Not Disturb 🔴";
+    if (target.presence.status === "idle") target.presence.status = "Idle 🌙";
+    if (target.presence.status === "online") target.presence.status = "Online 🟢";
+    if (target.presence.status === "offline") target.presence.status = "Offline <:of";
     
     function game() {
       let game;
@@ -50,23 +50,32 @@ module.exports = {
     .setThumbnail(avatar)
     .setDescription(
       `
-**❯ Name:** ${target.username}
+**<a:rainbowleft:764200797629186049> Name:** 
+${target.username}
 
-**❯ ID:** ${target.id}
+**<a:rainbowleft:764200797629186049> ID:** 
+${target.id}
 
-**❯ Nickname:** ${nickname}
+**<a:rainbowleft:764200797629186049> Nickname:** 
+${nickname}
 
-**❯ Account Creation:** ${createdate} | ${created} day(s) ago
+**<a:rainbowleft:764200797629186049> Account Creation:** 
+${createdate} | ${created} day(s) ago
 
-**❯ Server Joined At:** ${joindate} | ${joined} day(s) ago
+**<a:rainbowleft:764200797629186049> Server Joined At:** 
+${joindate} | ${joined} day(s) ago
 
-**❯ Status:** ${status}
+**<a:rainbowleft:764200797629186049> Status:** 
+${status}
 
-**❯ Game:** ${game()}
+**<a:rainbowleft:764200797629186049> Game:** 
+${game()}
 
-**❯ Badges:** ${flags}
+**<a:rainbowleft:764200797629186049> Badges:** 
+${flags}
 
-**❯ Roles:** <@&${member._roles.join('> <@&')}>`)
+**<a:rainbowleft:764200797629186049> Roles:** 
+<@&${member._roles.join('> <@&')}>`)
     .setColor("RANDOM")
     .setFooter(`Asked by ${message.author.username}`, aicon  )
     .setTimestamp()
