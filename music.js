@@ -179,7 +179,7 @@ Please provide a value to select one of the search results ranging from 1-10.
         "There is nothing playing that I could **`skip`** for you."
       );
     serverQueue.connection.dispatcher.end("Skip command has been used!");
-    return msg.channel.send("<a:q1:764200105786998815>   **|**  Skip command has been used!");
+    return msg.channel.send("<a:q1:764200105786998815> **|**  Skip command has been used!");
   } else if (command === "stop") {
     if (!msg.member.voice.channel)
       return msg.channel.send(
@@ -191,7 +191,7 @@ Please provide a value to select one of the search results ranging from 1-10.
       );
     serverQueue.songs = [];
     serverQueue.connection.dispatcher.end("Stop command has been used!");
-    return msg.channel.send("⏹️  **|**  Stop command has been used!");
+    return msg.channel.send("<:nonmusic:764242402286108682> **|**  Stop command has been used!");
   } else if (command === "volume" || command === "vol") {
     if (!msg.member.voice.channel)
       return msg.channel.send(
@@ -227,7 +227,7 @@ ${serverQueue.songs.map(song => `**-** ${song.title}`).join("\n")}
     if (serverQueue && serverQueue.playing) {
       serverQueue.playing = false;
       serverQueue.connection.dispatcher.pause();
-      return msg.channel.send("⏸  **|**  Paused the music for you!");
+      return msg.channel.send("<a:B_A_FLAME:764235639570300978> **|**  Paused the music for you!");
     }
     return msg.channel.send("There is nothing playing.");
   } else if (command === "resume") {
