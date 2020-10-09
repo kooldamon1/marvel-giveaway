@@ -7,33 +7,79 @@ module.exports = {
   run: async (client, message, args) => {
     let embed = new discord.MessageEmbed()
       .setTitle(`BOT  HELP MENU `)
-      .setDescription(`
+      .setDescription(
+        `
 __**MODERATION COMMANDS**__ 🔧
-\`addrole,removerole,clear[purge],ban,kick,voicekick,mute,unmute,slowmode,warn,warnings,resetwarns\`
+\addrole,
+removerole,
+clear[purge],
+ban,
+kick,
+voicekick,
+mute,
+unmute,
+slowmode,
+warn,
+warnings,
+resetwarns\
 
 __**FUN COMMANDS**__ 🙃
-\`advice,suggest,ascii,dog,fact,hug,joke,kpop,math,meme,mw,slap,punch,cry\`
+\`advice,
+suggest,
+ascii,
+dog,
+fact,
+hug,
+joke,
+kpop,
+math,
+meme,
+mw,\`
 
 __**INFORMATION COMMANDS**__ 💬
-\`avatar,botinfo,serverinfo,hastebin,imdb,membercount,weather,ping,pokemon,servericon,,whois,userinfo\`
+\`avatar,
+botinfo,
+serverinfo,
+hastebin,
+imdb,
+membercount,
+weather,
+ping,
+pokemon,
+servericon,
+whoiswhois,
+userinfo\`
 
 __**MUSIC COMMANDS**__ 🎶
-\`play,search,skip,stop,pause,resume,nowplaying,queue,volume\`
+\`play,
+search,
+skip,
+stop,
+pause,
+resume,
+nowplaying,
+queue,
+volume\`
 
 __**NSFW COMMANDS**__ ❌
-\`nahi hai\`
+\`haa ye krlo phle\`
 
 __**WELCOME COMMANDS**__ 🎉
 \`setwelcome,setmessage\`
 
 __**SPECIAL COMMANDS**__ 👑
-\`giveaway,math,announce,emoji,weather \`
+\`giveaway,
+math,
+announce,
+emoji,
+weather \`
 
 __**CORONA COMMANDS**__ ⚠️
 \`corona all, corona<country>\`
  
 If any contact is not working contact the bot owner
-`)
+`
+      )
 
       .setThumbnail(client.user.displayAvatarURL())
       .setColor("#35CB31")
@@ -42,6 +88,6 @@ If any contact is not working contact the bot owner
 
     await message.channel.send(embed);
 
-    message.react("💬");
+    message.react("🌀");
   }
 };
