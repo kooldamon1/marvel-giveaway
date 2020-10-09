@@ -9,7 +9,7 @@ module.exports = {
       .setTitle(`BOT  HELP MENU `)
       .setDescription(
         `
-__**MODERATION COMMANDS**__ 🔧
+__**MODERATION COMMANDS**__ <a:op11:764200185253199892>
 \`addrole,
 removerole,
 clear[purge],
@@ -23,7 +23,7 @@ warn,
 warnings,
 resetwarns\`
 
-__**FUN COMMANDS**__ 🙃
+__**FUN COMMANDS**__ <a:wink_pikachu:764199916456902666>
 \`advice,
 suggest,
 ascii,
@@ -36,7 +36,7 @@ math,
 meme,
 mw,\`
 
-__**INFORMATION COMMANDS**__ 💬
+__**INFORMATION COMMANDS**__ <a:load:764201016287559712>
 \`avatar,
 botinfo,
 serverinfo,
@@ -50,7 +50,7 @@ servericon,
 whoiswhois,
 userinfo\`
 
-__**MUSIC COMMANDS**__ 🎶
+__**MUSIC COMMANDS**__ <a:musicau:764209002741235745>
 \`play,
 search,
 skip,
@@ -61,7 +61,7 @@ nowplaying,
 queue,
 volume\`
 
-__**NSFW COMMANDS**__ ❌
+__**NSFW COMMANDS**__ 
 \`haa ye krlo phle\`
 
 __**WELCOME COMMANDS**__ 🎉
