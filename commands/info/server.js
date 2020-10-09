@@ -34,37 +34,37 @@ module.exports = {
       .setTitle(message.guild)
       .setDescription(
         `
-**OWNER**
+<a:vshield:764199958257336321> **OWNER**
 ${message.guild.owner.user.tag}
 
-**SERVER ID**
+<a:vshield:764199958257336321> **SERVER ID**
 ${message.guild.id}
 
-**REGION**
+<a:vshield:764199958257336321> **REGION**
 ${message.guild.region}
 
-**TOTAL MEMBERS**
+<a:vshield:764199958257336321> **TOTAL MEMBERS**
 ${message.guild.memberCount}
 
-**TOTAL CHANNELS **
+<a:vshield:764199958257336321> **TOTAL CHANNELS **
 ${message.guild.channels.cache.size}
 
-**TOTAL ROLES**
+<a:vshield:764199958257336321> **TOTAL ROLES**
 ${message.guild.roles.cache.size}
 
-**TOTAL EMOJI **
+<a:vshield:764199958257336321> **TOTAL EMOJI **
 ${message.guild.emojis.cache.size}
 
-**SERVER CREATED AT**
+<a:vshield:764199958257336321> **SERVER CREATED AT**
 ${message.guild.createdAt}
 
-**SERVER BOOST**
+<a:vshield:764199958257336321> **SERVER BOOST**
 ${message.guild.premiumSubscriptionCount}
 
-**BOOST LEVEL**
+<a:vshield:764199958257336321> **BOOST LEVEL**
 ${boostlevel}
 
-**Security** 
+<a:vshield:764199958257336321> **Security** 
 ${message.guild.verificationLevel}
 `)
       .setThumbnail(message.guild.iconURL())

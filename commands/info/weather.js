@@ -23,9 +23,9 @@ let embed = new discord.MessageEmbed()
 .addField("<a:tick:764200127002443806> Temperature " , `${result[0].current.temperature} Celcius`, true)
 .addField("<a:tick:764200127002443806> Sky Text ", result[0].current.skytext, true)
 .addField("<a:tick:764200127002443806> Humidity", result[0].current.humidity, true)
-.addField(" Wind Speed", result[0].current.windspeed, true)//What about image
-.addField(" Observation Time", result[0].current.observationtime, true)
-.addField(" Wind Display", result[0].current.winddisplay, true)
+.addField("<a:tick:764200127002443806> Wind Speed", result[0].current.windspeed, true)//What about image
+.addField("<a:tick:764200127002443806> Observation Time", result[0].current.observationtime, true)
+.addField("<a:tick:764200127002443806> Wind Display", result[0].current.winddisplay, true)
 .setThumbnail(result[0].current.imageUrl);
    message.channel.send(embed)
 } catch(err) {
