@@ -20,10 +20,10 @@ module.exports = {
 
     let embed = new discord.MessageEmbed();
 
-    embed.setTitle(`🔸AVATAR<a:TNR_Loadbounce:764200903829356565>`)
+    embed.setTitle(`<a:TNR_Loadbounce:764200903829356565> AVATAR <a:TNR_Loadbounce:764200903829356565>`)
     embed.setDescription(`[Download](${avatar})`);
     embed.setImage(avatar);
-    embed.setColor("RANDOM");
+    embed.setColor("#277ECD");
     embed.setFooter(`Requested by ${message.author.username}`);
     message.channel.send(embed);
   }
