@@ -21,8 +21,7 @@ mute,
 unmute,
 slowmode,
 warn,
-warnings,
-resetwarns\`
+\`
 
 __**FUN COMMANDS**__ <a:wink_pikachu:764199916456902666>
 \`advice,
