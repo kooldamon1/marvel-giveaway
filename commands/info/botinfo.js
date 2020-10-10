@@ -20,7 +20,7 @@ module.exports = {
       .addField("BOT LIBRARY", `discord.js`)
 
       .setColor("RANDOM")
-      .setFooter(`BOT CREDIT :- ShaDoW & VeNoM`);
+      .setFooter(`BOT CREDIT :- ShaDoW`);
 
     message.channel.send(embed);
   }
