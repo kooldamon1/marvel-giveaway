@@ -3,17 +3,16 @@ const { Random } = require("something-random-on-discord");
 const random = new Random();
 
 module.exports = {
-  name: "slap",
+  name: "boobs",
   category: "fun",
   description: "Slap someone",
   run: async (client, message, args) => {
-    let target = message.mentions.members.first();
-    let data = await random.getAnimeImgURL("slap");
+    let data = await random.getAnimeImgURL("boobs");
 
     let embed = new discord.MessageEmbed()
       .setImage(data)
       .setColor("RANDOM")
-      .setFooter(`${message.author.username} slaps ${target.user.username}`)
+      .setFooter(`${message.author.username}`)
       .setTimestamp();
 
     message.channel.send(embed);
