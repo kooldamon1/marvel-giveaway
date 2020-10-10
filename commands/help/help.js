@@ -35,7 +35,10 @@ joke,
 kpop,
 math,
 meme,
-mw\`
+mw,
+slap,
+punch,
+cry\`
 
 __**INFORMATION COMMANDS**__ <a:load:764201016287559712>
 \`avatar - av,
