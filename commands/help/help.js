@@ -14,26 +14,7 @@ __**MODERATION COMMANDS**__ <a:op11:764200185253199892>
 \`helpmod\` use with prefix
 
 __**FUN COMMANDS**__ <a:wink_pikachu:764199916456902666>
-\`advice,
-suggest,
-ascii,
-dog,
-fact,
-hug,
-joke,
-kpop,
-math,
-meme,
-mw,
-slap,
-punch,
-cry,
-kill,
-kiss,
-cry,
-cat,
-anime,
-neko\`
+\`helpfun\` use wit prefix
 
 __**INFORMATION COMMANDS**__ <a:load:764201016287559712>
 \`avatar - av,
