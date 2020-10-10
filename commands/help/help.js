@@ -4,7 +4,7 @@ const client = new discord.Client();
 module.exports = {
   name: "help",
   category: "help",
-  description: "BOT GET SOON UPDATES ",
+  description: "SHADOW OP ",
   run: async (client, message, args) => {
     let embed = new discord.MessageEmbed()
       .setTitle(`BOT  HELP MENU `)
@@ -13,7 +13,7 @@ module.exports = {
 __**MODERATION COMMANDS**__ <a:op11:764200185253199892>
 \`addrole,
 removerole,
-clear[purge],
+clear[purge] - c,
 ban,
 kick,
 voicekick,
@@ -38,7 +38,7 @@ meme,
 mw\`
 
 __**INFORMATION COMMANDS**__ <a:load:764201016287559712>
-\`avatar,
+\`avatar - av,
 botinfo,
 serverinfo,
 hastebin,
@@ -52,29 +52,29 @@ whoiswhois,
 userinfo\`
 
 __**MUSIC COMMANDS**__ <a:musicau:764209002741235745>
-\`play,
-search,
+\`play - p,
+search - sc,
 skip,
 stop,
 pause,
 resume,
-nowplaying,
-queue,
-volume\`
+nowplaying - np,
+queue - q,
+volume - vol\`
 
 __**NSFW COMMANDS**__ <a:Cross:764209193790996512>
-\`haa ye krlo phle\`
+\`I AM CLEAN BOT\`
 
 __**WELCOME COMMANDS**__ <a:welcome:764200994837758022>
-\`setwelcome,
-setmessage\`
+\`setwelcome #channel ,
+setmessage <text you want to set>\`
 
 __**SPECIAL COMMANDS**__ <a:party:764200631803838545>
-\`giveaway,
+\`giveaway time channel prize,
 math,
 announce,
 emoji,
-weather \`
+weather <area>\`
 
 __**CORONA COMMANDS**__ <a:heartbreak:764210242636349441>
 \`corona all, 
@@ -85,7 +85,7 @@ If any contact is not working contact the bot owner
       )
 
       .setThumbnail(client.user.displayAvatarURL())
-      .setColor("RANDOM")
+      .setColor("#93BFE6")
       .setFooter(`ShaDoW Op`)
       .setTimestamp((message.timestamp = Date.now()));
 

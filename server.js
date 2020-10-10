@@ -21,7 +21,7 @@ client.on("ready", async () => {
         console.log(client.user.tag + ' Has Logged In');
 
         function pickStatus() {
-            let status = [`${client.users.cache.size} users in ${client.guilds.cache.size} servers`, 'sshelp for commands', 'MADE BY :- SHADOW'];
+            let status = [`${client.users.cache.size} users in ${client.guilds.cache.size} servers`, 'shelp for commands', 'MADE BY :- SHADOW'];
             let Status = Math.floor(Math.random() * status.length);
 
             client.user.setActivity(status[Status], {
@@ -38,7 +38,7 @@ client.on("ready", async () => {
 client.on("message", async message => {
   const prefixMention = new RegExp(`^<@!?${client.user.id}>( |)$`);
   if (message.content.match(prefixMention)) {
-    return message.reply(`ANY HELP JUST USE sshelp For Commands`);
+    return message.reply(`ANY HELP JUST USE shelp For Commands`);
   }
 
   if (message.author.bot) return; 
