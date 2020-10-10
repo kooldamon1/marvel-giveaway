@@ -21,7 +21,7 @@ client.on("ready", async () => {
         console.log(client.user.tag + ' Has Logged In');
 
         function pickStatus() {
-            let status = [`${client.users.cache.size} users in ${client.guilds.cache.size} servers`, 'ShaDoW Op ╏ sshelp for commands'];
+            let status = [`${client.users.cache.size} users in ${client.guilds.cache.size} servers`, 'sshelp for commands', 'MADE BY :- SHADOW'];
             let Status = Math.floor(Math.random() * status.length);
 
             client.user.setActivity(status[Status], {
