@@ -8,7 +8,8 @@ module.exports = {
     let embed = new discord
       .MessageEmbed()
       .setTitle(`MODERATION COMMANDS <a:op11:764200185253199892>`)
-      .setDescription(`addrole - @user @role
+      .setDescription(`━━━━━━━━━━━━━━━━━━━━━━━━━
+addroleaddrole - @user @role
 
 removerole - @user @role 
 
@@ -30,7 +31,8 @@ warn - @user with reason
 
 warnings - @user show warnings
 
-resetwarns - @user reset all warnings of mention user\
+resetwarns - @user reset all warnings of mention user
+━━━━━━━━━━━━━━━━━━━━━━━━━\
 `)
       .setThumbnail(client.user.displayAvatarURL())
       .setColor("#93BFE6")

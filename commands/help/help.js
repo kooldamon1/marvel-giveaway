@@ -11,17 +11,7 @@ module.exports = {
       .setDescription(
         `
 __**MODERATION COMMANDS**__ <a:op11:764200185253199892>
-\`addrole,
-removerole,
-clear[purge] - c,
-ban,
-kick,
-voicekick,
-mute,
-unmute,
-slowmode,
-warn,
-\`
+\`helpmod\` use with prefix
 
 __**FUN COMMANDS**__ <a:wink_pikachu:764199916456902666>
 \`advice,
