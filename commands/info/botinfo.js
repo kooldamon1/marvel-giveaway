@@ -18,6 +18,7 @@ module.exports = {
       .addField("TOTAL CHANNAL", `${client.channels.cache.size}`)
       .addField("TOTAL USER", `${client.users.cache.size}`, true)
       .addField("BOT LIBRARY", `discord.js`)
+    .addField("BOT LATENCY", 
 
       .setColor("RANDOM")
       .setFooter(`BOT CREDIT :- ShaDoW`);

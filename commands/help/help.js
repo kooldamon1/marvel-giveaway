@@ -10,6 +10,7 @@ module.exports = {
       .setTitle(`BOT HELP MENU <a:India:764200316156510218> `)
       .setDescription(
         `
+        
 __**MODERATION COMMANDS**__ <a:op11:764200185253199892>
 \`helpmod\` use with prefix
 
@@ -43,7 +44,7 @@ __**CORONA COMMANDS**__ <a:heartbreak:764210242636349441>
  
 **__If Any Command Is Not Working Contact The Bot Owner__**
 
-SHADOW :- <@672027578181353473>
+OWNER :- <@672027578181353473>
 
 `
       )
