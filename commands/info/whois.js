@@ -18,12 +18,13 @@ module.exports = {
     }
 
     if (target.presence.status === "dnd")
-      target.presence.status = "Do Not Disturb 🔴";
-    if (target.presence.status === "idle") target.presence.status = "Idle 🌙";
+      target.presence.status = "Do Not Disturb <a:dnd:764943542597844993>";
+    if (target.presence.status === "idle")
+      target.presence.status = "Idle <a:idle:764943531072552980>";
     if (target.presence.status === "online")
-      target.presence.status = "Online 🟢";
+      target.presence.status = "Online <a:online:764943506409783346>";
     if (target.presence.status === "offline")
-      target.presence.status = "Offline ⚪";
+      target.presence.status = "Offline <a:offline:764943518929256448>";
 
     function game() {
       let game;
