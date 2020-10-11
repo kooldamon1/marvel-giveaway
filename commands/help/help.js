@@ -28,6 +28,8 @@ __**NSFW COMMANDS**__ <a:Cross:764209193790996512>
 __**WELCOME COMMANDS**__ <a:welcome:764200994837758022>
 \`setwelcome\` setwelcome #channel
 \`setmessage\` setmessage <text you want to set>
+\`resetwelcomimg\` reset welcome immage
+\`resetwelcomemsg\` reset welcome message
 
 __**SPECIAL COMMANDS**__ <a:party:764200631803838545>
 \`giveaway\` giveaway time channel prize

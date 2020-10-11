@@ -5,11 +5,13 @@ module.exports = {
   category: "help",
   description: "SHADOW OP ",
   run: async (client, message, args) => {
-    let embed = new discord
-      .MessageEmbed()
-      .setTitle(`MUSIC COMMANDS <a:musicau:764209002741235745>
-`)
-      .setDescription(`━━━━━━━━━━━━━━━━━━━━━━━━━
+    let embed = new discord.MessageEmbed()
+      .setTitle(
+        `MUSIC COMMANDS <a:musicau:764209002741235745>
+`
+      )
+      .setDescription(
+        `━━━━━━━━━━━━━━━━━━━━━━━━━
 play,p - plays with name
 
 search,sc - search a song
@@ -30,7 +32,8 @@ volume,vol - changes the volume
 
 loop - loops the music
 ━━━━━━━━━━━━━━━━━━━━━━━━━\
-`)
+`
+      )
       .setThumbnail(client.user.displayAvatarURL())
       .setColor("#93BFE6")
       .setFooter(`ShaDoW Op`)
