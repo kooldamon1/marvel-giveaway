@@ -35,7 +35,17 @@ slap - @user to slap
 
 punch - @user to punch 
 
-cry - makes you crei kill, kiss, cry, cat, anime, neko
+cry - makes you cry
+
+kill - kill yourself 
+
+kiss - kiss mention user
+
+cat - random cat pic
+
+anime - random anime
+
+neko - just use it
 ━━━━━━━━━━━━━━━━━━━━━━━━━\
 `)
       .setThumbnail(client.user.displayAvatarURL())
