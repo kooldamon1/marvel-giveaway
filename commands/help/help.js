@@ -26,11 +26,11 @@ __**NSFW COMMANDS**__ <a:Cross:764209193790996512>
 \`I AM CLEAN BOT\`
 
 __**WELCOME COMMANDS**__ <a:welcome:764200994837758022>
-\`setwelcome #channel ,
-setmessage <text you want to set>\`
+\`setwelcome\` setwelcome #channel
+\`setmessage\` setmessage <text you want to set>
 
 __**SPECIAL COMMANDS**__ <a:party:764200631803838545>
-\`giveaway time channel prize,
+\`giveaway\` giveaway time channel prize
 math,
 announce,
 emoji,

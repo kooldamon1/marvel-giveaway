@@ -1,29 +1,32 @@
 const discord = require("discord.js");
 const client = new discord.Client();
 module.exports = {
-  name: "helpmod",
+  name: "helpmusic",
   category: "help",
   description: "SHADOW OP ",
   run: async (client, message, args) => {
     let embed = new discord
       .MessageEmbed()
-      .setTitle(`MODERATION COMMANDS <a:op11:764200185253199892>`)
+      .setTitle(`MUSIC COMMANDS <a:musicau:764209002741235745>
+`)
       .setDescription(`━━━━━━━━━━━━━━━━━━━━━━━━━
-play,p - 
+play,p - plays with name
 
-search - sc,
+search,sc - search a song
 
-skip,
+skip - next track
 
-stop,
+stop - stops music 
 
-pause,
+pause - pause music 
 
-nowplaying - np,
+resume - resumes paused song
 
-queue - q,
+nowplaying,np shows current playing song
 
-volume - vol
+queue,q - shows play list
+
+volume,vol - changes the volume 
 ━━━━━━━━━━━━━━━━━━━━━━━━━\
 `)
       .setThumbnail(client.user.displayAvatarURL())
@@ -31,6 +34,6 @@ volume - vol
       .setFooter(`ShaDoW Op`)
       .setTimestamp((message.timestamp = Date.now()));
     await message.channel.send(embed);
-    message.react(client.emojis.cache.get("764200185253199892"));
+    message.react(client.emojis.cache.get("764209002741235745"));
   }
 };
