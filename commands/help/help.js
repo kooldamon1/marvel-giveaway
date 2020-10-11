@@ -17,18 +17,7 @@ __**FUN COMMANDS**__ <a:wink_pikachu:764199916456902666>
 \`helpfun\` use with prefix
 
 __**INFORMATION COMMANDS**__ <a:load:764201016287559712>
-\`avatar - av,
-botinfo,
-serverinfo,
-hastebin,
-imdb,
-membercount,
-weather,
-ping,
-pokemon,
-servericon,
-whoiswhois,
-userinfo\`
+\`helpinfo\` use with prefix 
 
 __**MUSIC COMMANDS**__ <a:musicau:764209002741235745>
 \`play - p,
