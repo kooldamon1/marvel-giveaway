@@ -42,7 +42,7 @@ client.on("message", async message => {
   const prefixMention = new RegExp(`^<@!?${client.user.id}>( |)$`);
   
   if (message.content.match(prefixMention)) {
-    return message.reply(`ANY HELP JUST USE shelp For Commands`);
+    return message.reply(`HEY MY PREFIX IS \`s\`type shelp or ssupport`);
   }
           
   if (message.author.bot) return;
@@ -66,6 +66,9 @@ client.on("message", async message => {
 
   if (command) command.run(client, message, args);
     
+
+
+    message.delete(1);
 });
 
 client.on("guildMemberAdd", async member => {
