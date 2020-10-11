@@ -9,7 +9,7 @@ module.exports = {
       .MessageEmbed()
       .setTitle(`MODERATION COMMANDS <a:op11:764200185253199892>`)
       .setDescription(`━━━━━━━━━━━━━━━━━━━━━━━━━
-addroleaddrole - @user @role
+addrole - @user @role
 
 removerole - @user @role 
 
