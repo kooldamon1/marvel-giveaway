@@ -46,6 +46,8 @@ cat - random cat pic
 anime - random anime
 
 neko - just use it
+
+afk - sets afk for you 
 ━━━━━━━━━━━━━━━━━━━━━━━━━\
 `
       )

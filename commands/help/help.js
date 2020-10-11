@@ -31,16 +31,18 @@ __**WELCOME COMMANDS**__ <a:welcome:764200994837758022>
 
 __**SPECIAL COMMANDS**__ <a:party:764200631803838545>
 \`giveaway\` giveaway time channel prize
-math,
-announce,
-emoji,
-weather <area>\`
+\`math\` do maths for you 
+\`announce\` announce something for you in embed
+\`weather\` weather area name 
 
 __**CORONA COMMANDS**__ <a:heartbreak:764210242636349441>
-\`corona all, 
-corona <country>\`
+\`corona all\` total deatails about corona on earth
+\`corona <country>\` total corona details of named country
  
-If any contact is not working contact the bot owner
+**__If Any Command Is Not Working Contact The Bot Owner__**
+
+SHADOW :- <@672027578181353473>
+
 `
       )
 
