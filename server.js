@@ -85,7 +85,7 @@ client.on("guildMemberAdd", async member => {
  | BE SURE THAT YOU HAVE READ |
 
 ━━━━━━━━━━━━━━━━━━━━━━━━
- | Username ${member.user.username}#${member.user.discriminator}  
+ | Username ${member.user.username} #${member.user.discriminator}  
  | Your Rank Is ${member.user.membercount}  
 
 ━━━━━━━━━━━━━━━━━━━━━━━━
