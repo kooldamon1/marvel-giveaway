@@ -87,7 +87,7 @@ client.on("guildMemberAdd", async member => {
 ━━━━━━━━━━━━━━━━━━━━━━━━
 
  | Username ${member.username}  
- | Your Rank Is ${member.membercount.ordinal}  
+ | Your Rank Is ${member.membercount}  
 
 ━━━━━━━━━━━━━━━━━━━━━━━━
 
