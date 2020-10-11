@@ -32,10 +32,10 @@ __**WELCOME COMMANDS**__ <a:welcome:764200994837758022>
 \`resetwelcomemsg\` reset welcome message
 
 __**SPECIAL COMMANDS**__ <a:party:764200631803838545>
-\`giveaway\` giveaway time channel prize
+\`giveaway\` giveaway <time channel prize> time in m,h,d format
 \`math\` do maths for you 
 \`announce\` announce something for you in embed
-\`weather\` weather area name 
+\`weather <area>\` weather area name 
 
 __**CORONA COMMANDS**__ <a:heartbreak:764210242636349441>
 \`corona all\` total deatails about corona on earth
