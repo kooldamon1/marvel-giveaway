@@ -27,6 +27,8 @@ nowplaying,np shows current playing song
 queue,q - shows play list
 
 volume,vol - changes the volume 
+
+loop - loops the music
 ━━━━━━━━━━━━━━━━━━━━━━━━━\
 `)
       .setThumbnail(client.user.displayAvatarURL())
