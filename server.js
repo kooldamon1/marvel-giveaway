@@ -85,7 +85,7 @@ client.on("guildMemberAdd", async member => {
  | BE SURE THAT YOU HAVE READ |
 
 ━━━━━━━━━━━━━━━━━━━━━━━━
- | Username ${member.user.username} #${member.user.discriminator}  
+ | Username ${member.username}
  | Your Rank Is ${member.user.membercount}  
 
 ━━━━━━━━━━━━━━━━━━━━━━━━
@@ -102,7 +102,7 @@ client.on("guildMemberAdd", async member => {
   const msg = m1
     .replace("{member}", member.user)
     .replace("{member.guild}", member.guild)
-    .replace("{member.user.username}", member.username)
+    .replace("{member.user.username} #{member.user.discriminator}", member.username)
     .replace("{member.user.membercount}", member.user.membercount)
     .replace("(:HEART)", `<a:BH:731369456634429493>`);
 
