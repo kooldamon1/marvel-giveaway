@@ -5,10 +5,10 @@ module.exports = {
   category: "help",
   description: "SHADOW OP ",
   run: async (client, message, args) => {
-    let embed = new discord
-      .MessageEmbed()
+    let embed = new discord.MessageEmbed()
       .setTitle(`MODERATION COMMANDS <a:op11:764200185253199892>`)
-      .setDescription(`━━━━━━━━━━━━━━━━━━━━━━━━━
+      .setDescription(
+        `━━━━━━━━━━━━━━━━━━━━━━━━━
 advice - gives you advice 
 
 suggest - suggest us something
@@ -47,7 +47,8 @@ anime - random anime
 
 neko - just use it
 ━━━━━━━━━━━━━━━━━━━━━━━━━\
-`)
+`
+      )
       .setThumbnail(client.user.displayAvatarURL())
       .setColor("#93BFE6")
       .setFooter(`ShaDoW Op`)
