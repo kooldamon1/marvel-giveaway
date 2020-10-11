@@ -6,19 +6,21 @@ module.exports = {
   description: "INVITE SENPAI",
   run: async (client, message, args) => {
     let embed = new discord.MessageEmbed()
-      .setTitle(`__**INFORMATION ABOUT BOT**__ <a:2628_rainbowdown:764201083068743710>`)
-      .addField("BOT NAME", `SHADOW OFFICIAL™`)
+      .setTitle(
+        `__**INFORMATION ABOUT BOT**__ <a:2628_rainbowdown:764201083068743710>`
+      )
+      .addField("BOT NAME <a:vshield:764199958257336321>", `SHADOW OFFICIAL™`)
       .addField(
-        "BOT DEVELOPER ",
+        "BOT DEVELOPER <a:vshield:764199958257336321>",
         `
 
 <@672027578181353473>`
       )
-      .addField("TOTAL SERVER", `${client.guilds.cache.size}`, true)
-      .addField("TOTAL CHANNAL", `${client.channels.cache.size}`)
-      .addField("TOTAL USER", `${client.users.cache.size}`, true)
-      .addField("BOT LIBRARY", `discord.js`)
-    .addField("BOT LATENCY", 
+      .addField("TOTAL SERVER <a:vshield:764199958257336321>", `${client.guilds.cache.size}`, true)
+      .addField("TOTAL CHANNAL <a:vshield:764199958257336321>", `${client.channels.cache.size}`)
+      .addField("TOTAL USER <a:vshield:764199958257336321>", `${client.users.cache.size}`, true)
+      .addField("BOT LIBRARY <a:vshield:764199958257336321>", `discord.js`)
+      .addField("BOT LATENCY <a:vshield:764199958257336321>", `${client.ws.ping}ms`)
 
       .setColor("RANDOM")
       .setFooter(`BOT CREDIT :- ShaDoW`);
