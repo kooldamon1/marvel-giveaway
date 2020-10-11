@@ -7,7 +7,7 @@ module.exports = {
   description: "SHADOW OP ",
   run: async (client, message, args) => {
     let embed = new discord.MessageEmbed()
-      .setTitle(`BOT  HELP MENU `)
+      .setTitle(`BOT HELP MENU <a:India:764200316156510218> `)
       .setDescription(
         `
 __**MODERATION COMMANDS**__ <a:op11:764200185253199892>
@@ -20,15 +20,7 @@ __**INFORMATION COMMANDS**__ <a:load:764201016287559712>
 \`helpinfo\` use with prefix 
 
 __**MUSIC COMMANDS**__ <a:musicau:764209002741235745>
-\`play - p,
-search - sc,
-skip,
-stop,
-pause,
-resume,
-nowplaying - np,
-queue - q,
-volume - vol\`
+\`helpmusic\` use with prefix
 
 __**NSFW COMMANDS**__ <a:Cross:764209193790996512>
 \`I AM CLEAN BOT\`

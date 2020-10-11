@@ -5,24 +5,36 @@ module.exports = {
   category: "help",
   description: "SHADOW OP ",
   run: async (client, message, args) => {
-    let embed = new discord
-      .MessageEmbed()
+    let embed = new discord.MessageEmbed()
       .setTitle(`INFORMATION COMMANDS <a:load:764201016287559712>`)
-      .setDescription(`━━━━━━━━━━━━━━━━━━━━━━━━━
-avatar - av,
-botinfo,
-serverinfo,
-hastebin,
-imdb,
-membercount,
-weather,
-ping,
-pokemon,
-servericon,
-whoiswhois - 
+      .setDescription(
+        `━━━━━━━━━━━━━━━━━━━━━━━━━
+avatar,av - avatar of mentioned user
+
+botinfo - bot info
+
+serverinfo - information about server
+
+hastebin - just use it
+
+imdb - imdb name gives info of movies
+
+membercount - show member count 
+
+weather - show wether of named area
+
+ping - show latency of bot
+
+pokemon - gives info about pokemon - give name 
+
+servericon - gives server icon
+
+whoiswhois - sho info about user
+
 userinfo - show information about user
 ━━━━━━━━━━━━━━━━━━━━━━━━━\
-`)
+`
+      )
       .setThumbnail(client.user.displayAvatarURL())
       .setColor("#93BFE6")
       .setFooter(`ShaDoW Op`)
