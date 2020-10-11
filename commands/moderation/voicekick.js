@@ -1,5 +1,6 @@
 module.exports = {
   name: "voicekick",
+  aliases: ["vckick"],
   category: "moderation",
   run: async (client, message, args) => {
     if (!message.guild.me.hasPermission(["ADMINISTRATOR"]))

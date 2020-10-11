@@ -79,24 +79,20 @@ client.on("guildMemberAdd", async member => {
   let default_url = `https://cdn.discordapp.com/attachments/696417925418057789/716197399336583178/giphy.gif`;
 
   let default_msg = `
-━━━━━━━━━━━━━━━━━━━━━━━━
+𒃾────────╌╌╌╌╌╌┄┄┈┈┈𖣔︎
 
  | WELCOME ${member} TO ${member.guild}
         
-━━━━━━━━━━━━━━━━━━━━━━━━
+𒃾────────╌╌╌╌╌╌┄┄┈┈┈𖣔︎
 
  | BE SURE THAT YOU HAVE READ |
 
-━━━━━━━━━━━━━━━━━━━━━━━━
- | Username member.username
- | Your Rank Is ${member.usercount}  
+𒃾────────╌╌╌╌╌╌┄┄┈┈┈𖣔︎
 
-━━━━━━━━━━━━━━━━━━━━━━━━
-
+ | Username ${member.username} #${member.user.discriminatior}
  | YOU CAN ENJOY IN  CHATTING 
 
-━━━━━━━━━━━━━━━━━━━━━━━━
-
+𒃾────────╌╌╌╌╌╌┄┄┈┈┈𖣔︎
         **__THANKS FOR JOINING US__**
 `;
 
