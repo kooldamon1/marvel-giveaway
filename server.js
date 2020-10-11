@@ -43,7 +43,7 @@ client.on("message", async message => {
   if (message.content.match(prefixMention)) {
     return message.reply(`ANY HELP JUST USE shelp For Commands`);
   }
- if (message.author.bot) return;
+  if (message.author.bot) return;
   if (!message.guild) return;
   if (!message.content.startsWith(prefix)) return;
 
@@ -101,7 +101,10 @@ client.on("guildMemberAdd", async member => {
   const msg = m1
     .replace("{member}", member.user)
     .replace("{member.guild}", member.guild)
-    .replace("${member.user.username} #${member.user.discriminator}", member.username)
+    .replace(
+      "${member.user.username} #${member.user.discriminator}",
+      member.username
+    )
     .replace("{member.user.membercount}", member.user.membercount)
     .replace("(:HEART)", `<a:BH:731369456634429493>`);
 
@@ -129,4 +132,3 @@ client.on("guildMemberAdd", async member => {
 });
 
 client.login(process.env.TOKEN);
-  
