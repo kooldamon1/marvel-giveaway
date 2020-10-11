@@ -41,7 +41,7 @@ client.on("ready", async () => {
 client.on("message", async message => {
   const prefixMention = new RegExp(`^<@!?${client.user.id}>( |)$`);
   if (message.content.match(prefixMention)) {
-    return message.reply(`ANY HELP JUST USE shelp For Commands`);
+    return message.reply(`${message.author.username} ANY HELP JUST USE shelp For Commands`);
   }
   if (message.author.bot) return;
   if (!message.guild) return;
