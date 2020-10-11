@@ -86,7 +86,7 @@ client.on("guildMemberAdd", async member => {
 
 ━━━━━━━━━━━━━━━━━━━━━━━━
 
- | Username ${member.username}  
+ | Username ${member.user.username}  
  | Your Rank Is ${member.membercount}  
 
 ━━━━━━━━━━━━━━━━━━━━━━━━
@@ -103,6 +103,7 @@ client.on("guildMemberAdd", async member => {
   const msg = m1
     .replace("{member}", member.user)
     .replace("{member.guild}", member.guild)
+    .replace("{member.username}", member.username)
     .replace("(:HEART)", `<a:BH:731369456634429493>`);
 
   let url = db.get(`url_${member.guild.id}`);
