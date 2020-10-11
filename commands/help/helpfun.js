@@ -1,12 +1,12 @@
 const discord = require("discord.js");
 const client = new discord.Client();
 module.exports = {
-  name: "helpmod",
+  name: "helpfun",
   category: "help",
   description: "SHADOW OP ",
   run: async (client, message, args) => {
     let embed = new discord.MessageEmbed()
-      .setTitle(`MODERATION COMMANDS <a:op11:764200185253199892>`)
+      .setTitle(`FUN COMMANDS <a:wink_pikachu:764199916456902666>`)
       .setDescription(
         `━━━━━━━━━━━━━━━━━━━━━━━━━
 advice - gives you advice 
@@ -54,6 +54,6 @@ neko - just use it
       .setFooter(`ShaDoW Op`)
       .setTimestamp((message.timestamp = Date.now()));
     await message.channel.send(embed);
-    message.react(client.emojis.cache.get("764200185253199892"));
+    message.react(client.emojis.cache.get("764199916456902666"));
   }
 };
