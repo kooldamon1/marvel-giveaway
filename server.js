@@ -40,11 +40,11 @@ client.on("ready", async () => {
 
 client.on("message", async message => {
   const prefixMention = new RegExp(`^<@!?${client.user.id}>( |)$`);
-  
+
   if (message.content.match(prefixMention)) {
     return message.reply(`HEY MY PREFIX IS \`s\`type shelp or ssupport`);
   }
-          
+
   if (message.author.bot) return;
   if (!message.guild) return;
   if (!message.content.startsWith(prefix)) return;
@@ -65,10 +65,8 @@ client.on("message", async message => {
   if (!command) command = client.commands.get(client.aliases.get(cmd));
 
   if (command) command.run(client, message, args);
-    
 
-
-    message.delete(1);
+  message.delete(1);
 });
 
 client.on("guildMemberAdd", async member => {
