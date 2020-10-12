@@ -33,10 +33,42 @@ helpinfo - shows information commands menu
         `       helpmusic - shows music comands menu
 `
       )
-    
-    .addFieldd(""
-    )
 
+      .addField(
+        "NSFW COMMANDS <a:Cross:764209193790996512>",
+
+        `UPDATING SOON
+`
+      )
+
+      .addField(
+        "WELCOME COMMANDS <a:welcome:764200994837758022>",
+        `
+setwelcome - setwelcome #channel
+setmessage - setmessage <text you want to set>
+resetwelcomimg - reset welcome immage
+resetwelcomemsg - reset welcome message
+
+`
+      )
+
+      .addField(
+        "SPECIAL COMMANDS <a:party:764200631803838545>",
+        `
+giveaway - giveaway <time channel prize> time in m,h,d format
+math - do maths for you 
+announce - announce something for you in embed
+weather - weather <rea name>
+`
+      )
+
+      .addField(
+        "CORONA COMMANDS <a:heartbreak:764210242636349441>",
+        `
+corona all - total deatails about corona on earth
+corona <country> - total corona details of named country
+`
+      )
       .addField(
         "BOT DEVELOPER <a:vshield:764199958257336321>",
 
