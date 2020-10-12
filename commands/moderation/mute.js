@@ -6,7 +6,7 @@ module.exports = {
   catagory: "moderation",
   usage: "mute <@mention> <reason>",
   run: async (client, message, args) => {
-    if (!message.member.hasPermission("MANAGE_ROLES")) {
+    if (!message.member.hasPermission("ADMINISTRATOR")) {
       return message.channel.send("sorry you need permission to mute someone");
     }
     if (!message.guild.me.hasPermission("MANAGE_ROLES")) {
@@ -16,25 +16,27 @@ module.exports = {
     const user = message.mentions.members.first();
 
     if (!user) {
-      return message.channel.send("\```please mention the members for mute\```");
+      return message.channel.send("```please mention the members to mute```");
     }
     if (user.id === message.author.id) {
-      return message.channel.send("I can't mute you because you are message author");
+      return message.channel.send(
+        "SO DUMB TO MUTE YOURSELF"
+      );
     }
     let reason = args.slice(1).join("");
 
     if (!reason) {
-      return message.channel.send(" \``` please give some  reason for mute\``` ");
+      return message.channel.send(" ``` please give reason to mute``` ");
     }
 
-    const vrole = user.roles.cache
+    const vrole = user.roles.cache;
 
     let muterole = message.guild.roles.cache.find(x => x.name === "muted");
 
     if (!muterole) {
-      return message.channel.send("\```please create role name with muted \``` ");
+      return message.channel.send("```please create a role with name muted ``` ");
     }
-    
+
     await user.roles.remove(vrole);
     await user.roles.add(muterole);
 
@@ -42,7 +44,6 @@ module.exports = {
       `you muted ${message.mentions.users.first().username} for ${reason}`
     );
 
-    user.send(`You get muted in ${message.guild} for ${reason}`
-    );
+    user.send(`You get muted in ${message.guild} for ${reason}`);
   }
 };
