@@ -8,12 +8,10 @@ module.exports = {
   run: async (client, message, args) => {
     let embed = new discord.MessageEmbed()
       .setTitle(`BOT HELP MENU <a:India:764200316156510218> `)
-      .setDescription(
-        `
-        
-__**MODERATION COMMANDS**__ <a:op11:764200185253199892>
-\`helpmod\` use with prefix
-
+     .addField("__**MODERATION COMMANDS**__ <a:op11:764200185253199892>"
+`helpmod\` use with prefix
+)
+ .setDescription(
 __**FUN COMMANDS**__ <a:wink_pikachu:764199916456902666>
 \`helpfun\` use with prefix
 
@@ -44,7 +42,7 @@ __**CORONA COMMANDS**__ <a:heartbreak:764210242636349441>
  
 **__If Any Command Is Not Working Contact The Bot Owner__**
 `
-      )
+              )
 
       .addField(
         "BOT DEVELOPER <a:vshield:764199958257336321>",
