@@ -9,29 +9,29 @@ module.exports = {
       .MessageEmbed()
       .setTitle(`MODERATION COMMANDS <a:op11:764200185253199892>`)
       .setDescription(`━━━━━━━━━━━━━━━━━━━━━━━━━
-addrole - @user @role
+\`addrole\` - @user @role
 
-removerole - @user @role 
+\`removerole\` - @user @role 
 
-clear[purge] - c with no of messages to be deleted
+\`clear,purge,c\` - with no of messages to be deleted
 
-ban - @user
+\`ban\` - ban the mentioned user
 
-kick - @user
+\`kick\` - kick the mentioneduser
 
-voicekick - @user
+\`voicekick\` - disconnect the mention user from vc
 
-mute - @user
+\`mute\` - mute user (require the muted role)
 
-unmute - @user
+\`unmute\` - unmute user
 
-slowmode - in channel with time
+\`slowmode\` - in channel with time
 
-warn - @user with reason
+\`warn\` - wanr user with reason
 
-warnings - @user show warnings
+\`warnings\` - show warnings of mentioned user
 
-resetwarns - @user reset all warnings of mention user
+\`resetwarns\` - reset all warnings of mentioned user
 ━━━━━━━━━━━━━━━━━━━━━━━━━\
 `)
       .setThumbnail(client.user.displayAvatarURL())
