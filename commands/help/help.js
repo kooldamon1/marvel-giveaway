@@ -20,7 +20,7 @@ __**INFORMATION COMMANDS**__ <a:load:764201016287559712>
 \`helpinfo\` all info commands
 
 __**MUSIC COMMANDS**__ <a:musicau:764209002741235745>
-\`helpmusic\` use with prefix
+\`helpmusic\` all music commands
 
 __**NSFW COMMANDS**__ <a:Cross:764209193790996512>
 \`I AM CLEAN BOT\`
@@ -52,6 +52,11 @@ __**CORONA COMMANDS**__ <a:heartbreak:764210242636349441>
 
 <@672027578181353473>`
       )
+    
+   .addField("BOT TEAM DEVELOPER <a:vshield:764199958257336321>",`
+<@479987197844652042>
+`
+           )
       .setThumbnail(client.user.displayAvatarURL())
       .setColor("#93BFE6")
       .setFooter(`ShaDoW Op`)
