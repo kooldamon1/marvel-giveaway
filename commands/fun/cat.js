@@ -15,7 +15,7 @@ superagent.get('https://nekos.life/api/v2/img/meow')
   .setTitle("Random cat")
   .setImage(response.body.url)
   .setColor(`#000000`)
-  .setFooter(`owo`)
+  .setFooter(`CUTE CAT`)
   .setURL(response.body.url);
 message.channel.send(lewdembed);
 })
