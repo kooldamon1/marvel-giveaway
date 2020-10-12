@@ -16,11 +16,31 @@ module.exports = {
 
 <@672027578181353473>`
       )
-      .addField("TOTAL SERVER <a:vshield:764199958257336321>", `${client.guilds.cache.size}`, true)
-      .addField("TOTAL CHANNAL <a:vshield:764199958257336321>", `${client.channels.cache.size}`)
-      .addField("TOTAL USER <a:vshield:764199958257336321>", `${client.users.cache.size}`, true)
+
+      .addField(
+        "BOT TEAM <a:vshield:764199958257336321>",
+        ` <@479987197844652042>`
+      )
+
+      .addField(
+        "TOTAL SERVER <a:vshield:764199958257336321>",
+        `${client.guilds.cache.size}`,
+        true
+      )
+      .addField(
+        "TOTAL CHANNAL <a:vshield:764199958257336321>",
+        `${client.channels.cache.size}`
+      )
+      .addField(
+        "TOTAL USER <a:vshield:764199958257336321>",
+        `${client.users.cache.size}`,
+        true
+      )
       .addField("BOT LIBRARY <a:vshield:764199958257336321>", `discord.js`)
-      .addField("BOT LATENCY <a:vshield:764199958257336321>", `${client.ws.ping}ms`)
+      .addField(
+        "BOT LATENCY <a:vshield:764199958257336321>",
+        `${client.ws.ping}ms`
+      )
 
       .setColor("RANDOM")
       .setFooter(`BOT CREDIT :- ShaDoW`);
