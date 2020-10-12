@@ -11,13 +11,13 @@ module.exports = {
     
     .setDescription(`\
     __*MODERATION COMMANDS**__ <a:op11:764200185253199892>
-\`helpmod\` use with prefix
+\`helpmod\` all mod commands 
  
 __**FUN COMMANDS**__ <a:wink_pikachu:764199916456902666>
-\`helpfun\` use with prefix
+\`helpfun\` all fun commands
 
 __**INFORMATION COMMANDS**__ <a:load:764201016287559712>
-\`helpinfo\` use with prefix 
+\`helpinfo\` all info commands
 
 __**MUSIC COMMANDS**__ <a:musicau:764209002741235745>
 \`helpmusic\` use with prefix
