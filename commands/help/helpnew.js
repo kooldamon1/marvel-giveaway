@@ -22,7 +22,7 @@ helpmod - shows moderation commands menu
       )
 
       .addField(
-        "INFORMATION COMMANDS <a:wink_pikachu:764199916456902666>",
+        "INFORMATION COMMANDS <a:load:764201016287559712>",
         `
 helpinfo - shows information commands menu
 `
