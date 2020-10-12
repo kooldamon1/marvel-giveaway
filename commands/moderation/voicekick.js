@@ -12,11 +12,14 @@ module.exports = {
       return message.channel.send(
         `Please Mention User That You Want To Kick From Voice Channel!`
       );
+     message.delete()
 
     let { channel } = message.mentions.members.first().voice;
 
     if (!channel)
       return message.channel.send(`User Is Not In Any Voice Channel!`);
+    
+   
 
     message.mentions.members.first().voice.kick();
     
