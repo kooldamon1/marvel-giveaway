@@ -18,7 +18,7 @@ module.exports = {
       let corona = await track.all() //it will give global cases
       
       let embed = new discord.MessageEmbed()
-      .setTitle(`__Global Cases__`)
+      .setTitle(`__Global Cases__ <a:TNR_Loadbounce:764200903829356565>`)
       .setColor("#ff2050")
       .setDescription(`Sometimes cases number may differ from small amount.`)
       .addField("Total Cases", corona.cases, true )
@@ -36,7 +36,7 @@ module.exports = {
       let corona = await track.countries(args.join(" ")) //change it to countries
       
       let embed = new discord.MessageEmbed()
-      .setTitle(`__${corona.country}__`)
+      .setTitle(`__${corona.country}__ <a:TNR_Loadbounce:764200903829356565>`)
       .setColor("#ff2050")
       .setDescription(`Sometimes cases number may differ from small amount.`)
       .addField("Total Cases", corona.cases, true)

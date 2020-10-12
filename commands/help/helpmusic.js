@@ -12,19 +12,19 @@ module.exports = {
       )
       .setDescription(
         `━━━━━━━━━━━━━━━━━━━━━━━━━
-play,p - plays with name
+\`play,p\` - plays with name
 
-search,sc - search a song
+\`search,sc\` - search a song
 
-skip - next track
+\`skip\` - next track
 
-stop - stops music 
+\`stop\` - stops music 
 
-pause - pause music 
+\`pause\` - pause music 
 
-resume - resumes paused song
+\`resume\` - resumes paused song
 
-nowplaying,np shows current playing song
+\`nowplaying,np\` - shows current playing song
 
 queue,q - shows play list
 
