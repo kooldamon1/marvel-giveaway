@@ -43,12 +43,16 @@ __**CORONA COMMANDS**__ <a:heartbreak:764210242636349441>
 \`corona <country>\` total corona details of named country
  
 **__If Any Command Is Not Working Contact The Bot Owner__**
-
-OWNER :- <@672027578181353473>
-
 `
       )
 
+      .addField(
+        "BOT DEVELOPER <a:vshield:764199958257336321>",
+
+        `
+
+<@672027578181353473>`
+      )
       .setThumbnail(client.user.displayAvatarURL())
       .setColor("#93BFE6")
       .setFooter(`ShaDoW Op`)
