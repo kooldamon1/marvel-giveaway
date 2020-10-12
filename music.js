@@ -178,8 +178,8 @@ Please provide a value to select one of the search results ranging from 1-10.
       return msg.channel.send(
         "There is nothing playing that I could **`skip`** for you."
       );
-    serverQueue.connection.dispatcher.end("Skip command has been used!");
-    return msg.channel.send("<a:q1:764200105786998815> **|**  Skip command has been used!");
+    serverQueue.connection.dispatcher.end("Skipping To Next Track");
+    return msg.channel.send("<a:q1:764200105786998815> **|**  Skipped To The Next Track For You!");
   } else if (command === "stop") {
     if (!msg.member.voice.channel)
       return msg.channel.send(

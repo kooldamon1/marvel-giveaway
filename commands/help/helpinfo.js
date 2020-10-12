@@ -32,6 +32,8 @@ servericon - gives server icon
 whoiswhois - sho info about user
 
 userinfo - show information about user
+
+author,owner - about bot creator
 ━━━━━━━━━━━━━━━━━━━━━━━━━\
 `
       )
