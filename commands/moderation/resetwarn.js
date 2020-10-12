@@ -16,7 +16,9 @@ module.exports = {
     const user = message.mentions.members.first();
 
     if (!user) {
-      return message.channel.send("Please mention the person whose warning you want to reset");
+      return message.channel.send(
+        "Please mention the person whose warning you want to reset"
+      );
     }
 
     if (message.mentions.users.first().bot) {
@@ -30,7 +32,9 @@ module.exports = {
     let warnings = db.get(`warnings_${message.guild.id}_${user.id}`);
 
     if (warnings === null) {
-      return message.channel.send(`${message.mentions.users.first().username} do not have any warnings`);
+      return message.channel.send(
+        `${message.mentions.users.first().username} do not have any warnings`
+      );
     }
 
     db.delete(`warnings_${message.guild.id}_${user.id}`);

@@ -5,13 +5,13 @@ module.exports = {
   category: "help",
   description: "SHADOW OP ",
   run: async (client, message, args) => {
-    let embed = new discord
-      .MessageEmbed()
+    let embed = new discord.MessageEmbed()
       .setTitle(`MODERATION COMMANDS <a:op11:764200185253199892>`)
-      .setDescription(`━━━━━━━━━━━━━━━━━━━━━━━━━
+      .setDescription(
+        `━━━━━━━━━━━━━━━━━━━━━━━━━
 \`addrole\` - @user @role
 
-\`removerole\` - @user @role 
+\`removerole,rmrole,-\` - @user @role 
 
 \`clear,purge,c\` - with no of messages to be deleted
 
@@ -33,7 +33,8 @@ module.exports = {
 
 \`resetwarns\` - reset all warnings of mentioned user
 ━━━━━━━━━━━━━━━━━━━━━━━━━\
-`)
+`
+      )
       .setThumbnail(client.user.displayAvatarURL())
       .setColor("#93BFE6")
       .setFooter(`ShaDoW Op`)

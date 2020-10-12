@@ -17,7 +17,9 @@ module.exports = {
 
       message.channel.send(embed);
     } catch (error) {
-      message.channel.send(`Please Give Me Valid Equation | Try Again Later!`).then(() => console.log(error));
+      message.channel
+        .send(`Please Give Me Valid Equation | Try Again Later!`)
+        .then(() => console.log(error));
     }
   }
 };

@@ -1,5 +1,5 @@
 const discord = require("discord.js");
-const akaneko = require('akaneko');
+const akaneko = require("akaneko");
 
 module.exports = {
   name: "mwallpapers",
@@ -7,10 +7,9 @@ module.exports = {
   category: "nsfw",
   description: "Get some wallpapers",
   run: async (client, message, args) => {
-    
-    let akanekoSan = new discord.MessageEmbed()
-    akanekoSan.setColor("RANDOM")
+    let akanekoSan = new discord.MessageEmbed();
+    akanekoSan.setColor("RANDOM");
     akanekoSan.setImage(akaneko.mobileWallpapers());
     return message.channel.send(akanekoSan);
   }
-}
+};

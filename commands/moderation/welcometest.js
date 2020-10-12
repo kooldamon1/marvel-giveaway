@@ -34,8 +34,13 @@ SERVER :- ${member.guild}
     if (url === null) url = default_url;
 
     let embed = new discord.MessageEmbed()
-      .setAuthor(message.author.username, message.author.avatarURL({ dynamic: true, size: 2048 }))
-      .setThumbnail(message.author.displayAvatarURL({ dynamic: true, size: 2048 }))
+      .setAuthor(
+        message.author.username,
+        message.author.avatarURL({ dynamic: true, size: 2048 })
+      )
+      .setThumbnail(
+        message.author.displayAvatarURL({ dynamic: true, size: 2048 })
+      )
       .setColor("RANDOM")
       .setImage(url)
       .setDescription(msg);
