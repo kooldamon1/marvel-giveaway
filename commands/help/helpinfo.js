@@ -9,31 +9,31 @@ module.exports = {
       .setTitle(`INFORMATION COMMANDS <a:load:764201016287559712>`)
       .setDescription(
         `━━━━━━━━━━━━━━━━━━━━━━━━━
-avatar,av - avatar of mentioned user
+\`avatar,av\` - avatar of mentioned user
 
-botinfo - bot info
+\`botinfo\` - bot info
 
-serverinfo - information about server
+\`serverinfo\` - information about server
 
-hastebin - just use it
+\`hastebin\` - just use it
 
-imdb - imdb name gives info of movies
+\`imdb\` - imdb name gives info of movies
 
-membercount - show member count 
+\`membercount\` - show member count 
 
-weather - show wether of named area
+\`weather\` - show wether of named area
 
-ping - show latency of bot
+\`ping\` - show latency of bot
 
-pokemon - gives info about pokemon - give name 
+\`pokemon\` - gives info about pokemon - give name 
 
-servericon - gives server icon
+\`servericon\` - gives server icon
 
-whoiswhois - sho info about user
+\`whois,userinfo\` - sho info about user
 
-userinfo - show information about user
+\`emoji\`
 
-author,owner - about bot creator
+\`author,owner\` - about bot creator
 ━━━━━━━━━━━━━━━━━━━━━━━━━\
 `
       )
