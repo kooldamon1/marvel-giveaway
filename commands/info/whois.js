@@ -69,8 +69,8 @@ module.exports = {
 **<a:rainbowleft:764200797629186049> Account Creation:** 
 <a:loading:764199817769254912> ${createdate} | ${created} day(s) ago
 
-**<a:rainbowleft:764200797629186049> Server Joined At:** 
-<a:loading:764199817769254912> ${joindate} | ${joined} day(s) ago
+**<a:rainbowleft:764200797629186049> Server Joined:** 
+<a:loading:764199817769254912> ${joined} day(s) ago
 
 **<a:rainbowleft:764200797629186049> Status:** 
 <a:loading:764199817769254912> ${status}
