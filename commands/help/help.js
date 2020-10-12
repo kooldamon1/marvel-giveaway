@@ -8,10 +8,11 @@ module.exports = {
   run: async (client, message, args) => {
     let embed = new discord.MessageEmbed()
       .setTitle(`BOT HELP MENU <a:India:764200316156510218> `)
-     .addField("__**MODERATION COMMANDS**__ <a:op11:764200185253199892>"
-`helpmod\` use with prefix
-)
- .setDescription(
+    
+    .setDescription(`\
+    _**MODERATION COMMANDS**__ <a:op11:764200185253199892>
+\`helpmod\` use with prefix
+ 
 __**FUN COMMANDS**__ <a:wink_pikachu:764199916456902666>
 \`helpfun\` use with prefix
 
