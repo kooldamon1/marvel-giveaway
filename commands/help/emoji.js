@@ -3,7 +3,7 @@ const { RichEmbed } = require("discord.js");
 module.exports = {
   name: "emoji",
   category: "info",
-  description: "INVITE PARAS BOT",
+  description: "INVITE SHADOW BOT",
   run: async (client, message, args) => {
     try {
       let notAnimated = [];

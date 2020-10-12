@@ -31,7 +31,7 @@ module.exports = {
 
 \`whois,userinfo\` - sho info about user
 
-\`emoji\`
+\`emoji\` - show all emoji in the server
 
 \`author,owner\` - about bot creator
 ━━━━━━━━━━━━━━━━━━━━━━━━━\
