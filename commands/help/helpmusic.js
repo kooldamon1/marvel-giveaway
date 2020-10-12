@@ -10,6 +10,7 @@ module.exports = {
         `MUSIC COMMANDS <a:musicau:764209002741235745>
 `
       )
+
       .setDescription(
         `━━━━━━━━━━━━━━━━━━━━━━━━━
 \`play,p\` - plays with name
@@ -26,11 +27,11 @@ module.exports = {
 
 \`nowplaying,np\` - shows current playing song
 
-queue,q - shows play list
+\`queue\` - shows play list
 
-volume,vol - changes the volume 
+\`volume,vol\` - changes the volume 
 
-loop - loops the music
+\`loop\` - loops the music
 ━━━━━━━━━━━━━━━━━━━━━━━━━\
 `
       )
