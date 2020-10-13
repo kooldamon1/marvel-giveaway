@@ -30,7 +30,6 @@ module.exports = {
         `
  Giveaway Hosted By :- 
 ${message.author} 
-${args}
 `
       )
       .setTimestamp(Date.now() + ms(args[0]))
