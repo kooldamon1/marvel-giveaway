@@ -4,7 +4,7 @@ module.exports = {
   name: "giveaway",
   description: "Create a simple giveaway",
   usage: "<time> <channel> <prize>",
-  category: "PRO",
+  category: "SPECIAL",
   run: async (bot, message, args) => {
     if (!args[0]) return message.channel.send(`You did not specify your time!`);
     if (
@@ -25,11 +25,13 @@ module.exports = {
     if (!prize) return message.channel.send(`No prize specified!`);
     message.channel.send(`*Giveaway created in ${channel}*`);
     let Embed = new MessageEmbed()
-      .setTitle(`GIVEAWAY <a:party:764200631803838545>`)
+      .setTitle(`${prize} <a:party:764200631803838545>`)
       .setDescription(
-        `${message.author} 
-Is hosting a giveaway for <a:2628_rainbowdown:764201083068743710>
-**${prize}**`
+        `
+ Giveaway Hosted By :- 
+${message.author} 
+${args}
+`
       )
       .setTimestamp(Date.now() + ms(args[0]))
       .setColor(`BLUE`);
