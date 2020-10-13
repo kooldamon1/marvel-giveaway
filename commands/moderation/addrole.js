@@ -17,14 +17,11 @@ module.exports = {
     let target = message.mentions.members.first();
 
     if (!target)
-      return message.reply(`<:no:677902165859237894>please mention user!`);
+      return message.reply(`<a:reddot:764199882189176843> please mention user!`);
 
     let arole = message.mentions.roles.first();
 
-    if (!arole)
-      return message.reply(
-        `<:no:677902165859237894>please mention role for add!`
-      );
+    if (!arole) return message.reply(`<:no: please mention role for add!`);
 
     let ticon = target.user.avatarURL({ dynamic: true, size: 2048 });
     let aicon = message.author.avatarURL({ dynamic: true, size: 2048 });
@@ -32,7 +29,7 @@ module.exports = {
     const embed = new MessageEmbed()
 
       .setThumbnail(target.user.displayAvatarURL({ dynamic: true }))
-      .setColor("RANDOM")
+      .setColor("BLUE")
 
       .setFooter(`Role added by ${message.author.username}`, aicon)
 
