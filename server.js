@@ -66,7 +66,6 @@ client.on("message", async message => {
 
   if (command) command.run(client, message, args);
 
-  message.delete(1);
 });
 
 client.on("guildMemberAdd", async member => {
