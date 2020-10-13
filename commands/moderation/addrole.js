@@ -11,13 +11,22 @@ module.exports = {
         "sorry you need permission to give role to someone"
       );
     }
+
     if (!message.guild.me.hasPermission("MANAGE_ROLES")) {
       return message.channel.send("I do not have permission to give roles");
     }
+
+    if (message.guild.me.roles.highest.position <= !target.position)
+      return message.reply(
+        `My Role isn't High Enough to Assign The Role! ${arole.name}`
+      );
+
     let target = message.mentions.members.first();
 
     if (!target)
-      return message.reply(`<a:reddot:764199882189176843> please mention user!`);
+      return message.reply(
+        `<a:reddot:764199882189176843> please mention user!`
+      );
 
     let arole = message.mentions.roles.first();
 

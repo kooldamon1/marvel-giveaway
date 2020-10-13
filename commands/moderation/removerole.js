@@ -6,20 +6,14 @@ module.exports = {
   category: "moderation",
   description: "Remove role from any user",
   run: async (client, message, args) => {
+   
     let target = message.mentions.members.first();
-    
-    if (message.guild.me.roles.highest.position <= !rrole.position)
-      return message.reply(
-        `My Role isn't High Enough to Assign The Role! ${!rrole.name}`
-      );
 
     if (!target) return message.reply(`I am unable to find the user`);
 
     let rrole = message.mentions.roles.first();
 
     if (!rrole) return message.reply(`I am unable to find the role`);
-
-    
 
     let ticon = target.user.avatarURL({ dynamic: true, size: 2048 });
     let aicon = message.author.avatarURL({ dynamic: true, size: 2048 });
