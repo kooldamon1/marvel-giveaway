@@ -55,7 +55,8 @@ module.exports = {
     const embed = new MessageEmbed()
       .setAuthor(target.tag, avatar)
       .setThumbnail(avatar)
-      .setDescription(
+    .setTitle(`Requested By :- ${message.author.username}`)  
+    .setDescription(
         `
 **<a:rainbowleft:764200797629186049> Name:** 
 <a:loading:764199817769254912> ${target.username}

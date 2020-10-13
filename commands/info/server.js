@@ -5,31 +5,41 @@ module.exports = {
   category: "info",
   description: "Get the info of any server",
   run: async (client, message, args) => {
-    if (message.guild.premiumTier === "Level 0") message.guild.premiumTier = "<a:NitroBooster_:764236018135203861> 0"
-    if (message.guild.premiumTier === "Level 1") message.guild.premiumTier = "<a:B_BoostKar:764235739814166571> 1"
-    if (message.guild.premiumTier === "Level 2") message.guild.premiumTier = "<a:VLG_boost:764235935952273438> 2"
-    if (message.guild.premiumTier === "Level 3") message.guild.premiumTier = "<a:boost:764236056697503805> 3"
-    
-    if (message.guild.region === "india") message.guild.region = "<a:India:764200316156510218> India"
-    if (message.guild.region === "brazil") message.guild.region = "🇧🇷 Brazil"
-    if (message.guild.region === "japan") message.guild.region = "🇯🇵 Japan"
-    if (message.guild.region === "russia") message.guild.region = "🇷🇺 Russia"
-    if (message.guild.region === "europe") message.guild.region = "🇪🇺 Europe"
-    if (message.guild.region === "sydney") message.guild.region = "🇦🇺 Sydney"
-    if (message.guild.region === "singapore") message.guild.region = "🇸🇬 Singapore"
-    if (message.guild.region === "hongkong") message.guild.region = "🇭🇰 Hong Kong"
-    if (message.guild.region === "southafrica") message.guild.region = "🇿🇦 South Africa"
-    if (message.guild.region === "us-east") message.guild.region = "🇺🇸 US East" 
-    if (message.guild.region === "us-west") message.guild.region = "🇺🇸 US West"
-    if (message.guild.region === "us-central") message.guild.region = "🇺🇸US Central"
-    if (message.guild.region === "us-south") message.guild.region = "🇺🇸 US South"
-    
-      let boostlevel = message.guild.premiumTier
-    
+    if (message.guild.premiumTier === "Level 0")
+      message.guild.premiumTier = "<a:NitroBooster_:764236018135203861> 0";
+    if (message.guild.premiumTier === "Level 1")
+      message.guild.premiumTier = "<a:B_BoostKar:764235739814166571> 1";
+    if (message.guild.premiumTier === "Level 2")
+      message.guild.premiumTier = "<a:VLG_boost:764235935952273438> 2";
+    if (message.guild.premiumTier === "Level 3")
+      message.guild.premiumTier = "<a:boost:764236056697503805> 3";
+
+    if (message.guild.region === "india")
+      message.guild.region = "<a:India:764200316156510218> India";
+    if (message.guild.region === "brazil") message.guild.region = "🇧🇷 Brazil";
+    if (message.guild.region === "japan") message.guild.region = "🇯🇵 Japan";
+    if (message.guild.region === "russia") message.guild.region = "🇷🇺 Russia";
+    if (message.guild.region === "europe") message.guild.region = "🇪🇺 Europe";
+    if (message.guild.region === "sydney") message.guild.region = "🇦🇺 Sydney";
+    if (message.guild.region === "singapore")
+      message.guild.region = "🇸🇬 Singapore";
+    if (message.guild.region === "hongkong")
+      message.guild.region = "🇭🇰 Hong Kong";
+    if (message.guild.region === "southafrica")
+      message.guild.region = "🇿🇦 South Africa";
+    if (message.guild.region === "us-east") message.guild.region = "🇺🇸 US East";
+    if (message.guild.region === "us-west") message.guild.region = "🇺🇸 US West";
+    if (message.guild.region === "us-central")
+      message.guild.region = "🇺🇸US Central";
+    if (message.guild.region === "us-south")
+      message.guild.region = "🇺🇸 US South";
+
+    let boostlevel = message.guild.premiumTier;
+
     let aicon = message.author.avatarURL({ dynamic: true, size: 2048 });
 
     let sicon = message.guild.iconURL({ dynamic: true, size: 2048 });
-    
+
     let embed = new discord.MessageEmbed()
       .setTitle(message.guild)
       .setDescription(
@@ -66,11 +76,12 @@ module.exports = {
 
 <a:vshield:764199958257336321> **Security** 
 <a:q1:764200105786998815> ${message.guild.verificationLevel}
-`)
-      
-      .setImage(message.guild.iconURL({dynamic: true, size: 1024}))
+`
+      )
+
+      .setImage(message.guild.iconURL({ dynamic: true, size: 1024 }))
       .setColor("#00ff00")
-      .setFooter(message.guild)
+      .setFooter(`${message.guild} Requested By :- ${message.author.username}`);
 
     message.channel.send(embed);
   }
