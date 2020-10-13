@@ -1,36 +1,43 @@
-const { MessageEmbed } = require('discord.js')
+const { MessageEmbed } = require("discord.js");
 
 module.exports = {
   name: "addrole",
-  aliases: ["role", "P!role"],
+  aliases: ["role", "+role"],
   category: "moderation",
   description: "Add role to any user",
   run: async (client, message, args) => {
-   if (!message.member.hasPermission("MANAGE_ROLES")) {
-      return message.channel.send("sorry you need permission to mute someone");
+    if (!message.member.hasPermission("MANAGE_ROLES")) {
+      return message.channel.send(
+        "sorry you need permission to give role to someone"
+      );
     }
     if (!message.guild.me.hasPermission("MANAGE_ROLES")) {
-      return message.channel.send("I do not have permission to mute");
-    } 
+      return message.channel.send("I do not have permission to give roles");
+    }
     let target = message.mentions.members.first();
-    
-    if(!target) return message.reply(`<:no:677902165859237894>please mention user!`)
-    
+
+    if (!target)
+      return message.reply(`<:no:677902165859237894>please mention user!`);
+
     let arole = message.mentions.roles.first();
-    
-    if(!arole) return message.reply(`<:no:677902165859237894>please mention role for add!`)
-    
+
+    if (!arole)
+      return message.reply(
+        `<:no:677902165859237894>please mention role for add!`
+      );
+
     let ticon = target.user.avatarURL({ dynamic: true, size: 2048 });
     let aicon = message.author.avatarURL({ dynamic: true, size: 2048 });
-    
-      const embed = new MessageEmbed()
-      
+
+    const embed = new MessageEmbed()
+
       .setColor("RANDOM")
-      .setDescription(`<a:tick1:764199777281114133> | changed role for ${target.user.username} added ${arole}`)
-      
-      await message.channel.send(embed)
-      
-      target.roles.add(arole)
-    
+      .setDescription(
+        `<a:tick1:764199777281114133> | changed role for ${target.user.username} added ${arole}`
+      );
+
+    await message.channel.send(embed);
+
+    target.roles.add(arole);
   }
-}
+};
