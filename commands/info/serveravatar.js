@@ -9,7 +9,7 @@ module.exports = {
     let embed = new discord.MessageEmbed();
 
     embed.setTitle(
-      "<a:reddot:764199882189176843>  SERVER ICNON  <a:reddot:764199882189176843> "
+      "<a:reddot:764199882189176843>  SERVER ICNON  <a:reddot:764199882189176843>"
     );
     embed.setDescription(
       `[Download](${message.guild.iconURL({ dynamic: true, size: 2048 })})`
