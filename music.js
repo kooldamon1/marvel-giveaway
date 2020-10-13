@@ -44,6 +44,10 @@ bot.on("message", async msg => {
       return msg.channel.send(
         "I'm sorry but you need to be in a voice channel to play a music!"
       );
+    voiceChannel.join()
+      .then(connection => {
+        connection.voice.setSelfDeaf(true);
+      });
     const permissions = voiceChannel.permissionsFor(msg.client.user);
     if (!permissions.has("CONNECT")) {
       return msg.channel.send(
