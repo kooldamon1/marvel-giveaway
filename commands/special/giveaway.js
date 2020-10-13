@@ -32,6 +32,13 @@ module.exports = {
 ${message.author} 
 `
       )
+    
+    let ticon = message.author.avatarURL({ dynamic: true, size: 2048 });
+    let aicon = message.author.avatarURL({ dynamic: true, size: 2048 });
+    
+     const embed = new MessageEmbed()
+
+      .setThumbnail(message.author.avatarURL({ dynamic: true }))
       .setTimestamp(Date.now() + ms(args[0]))
       .setColor(`BLUE`);
     let m = await channel.send(Embed);
