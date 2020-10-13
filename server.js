@@ -42,7 +42,7 @@ client.on("message", async message => {
   const prefixMention = new RegExp(`^<@!?${client.user.id}>( |)$`);
 
   if (message.content.match(prefixMention)) {
-    return message.reply(`HEY MY PREFIX IS \`s\`type shelp or ssupport`);
+    return message.reply(`HEY MY PREFIX IS  \`s\` type shelp or ssupport`);
   }
 
   if (message.author.bot) return;
