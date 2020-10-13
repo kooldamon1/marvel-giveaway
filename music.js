@@ -44,10 +44,9 @@ bot.on("message", async msg => {
       return msg.channel.send(
         "I'm sorry but you need to be in a voice channel to play a music!"
       );
-    voiceChannel.join()
-      .then(connection => {
-        connection.voice.setSelfDeaf(true);
-      });
+    voiceChannel.join().then(connection => {
+      connection.voice.setSelfDeaf(true);
+    });
     const permissions = voiceChannel.permissionsFor(msg.client.user);
     if (!permissions.has("CONNECT")) {
       return msg.channel.send(
@@ -168,7 +167,9 @@ Please provide a value to select one of the search results ranging from 1-10.
         "There is nothing playing that I could **`skip`** for you."
       );
     serverQueue.connection.dispatcher.end("Skipping To Next Track");
-    return msg.channel.send("<a:q1:764200105786998815> **|**  Skipped To The Next Track For You!");
+    return msg.channel.send(
+      "<a:q1:764200105786998815> **|**  Skipped To The Next Track For You!"
+    );
   } else if (command === "stop") {
     if (!msg.member.voice.channel)
       return msg.channel.send(
@@ -180,7 +181,9 @@ Please provide a value to select one of the search results ranging from 1-10.
       );
     serverQueue.songs = [];
     serverQueue.connection.dispatcher.end("Stopped");
-    return msg.channel.send("<a:reddot:764199882189176843> **|**  Stopped The Music For You");
+    return msg.channel.send(
+      "<a:reddot:764199882189176843> **|**  Stopped The Music For You"
+    );
   } else if (command === "volume" || command === "vol") {
     if (!msg.member.voice.channel)
       return msg.channel.send(
@@ -216,14 +219,18 @@ ${serverQueue.songs.map(song => `**-** ${song.title}`).join("\n")}
     if (serverQueue && serverQueue.playing) {
       serverQueue.playing = false;
       serverQueue.connection.dispatcher.pause();
-      return msg.channel.send("<a:B_A_FLAME:764235639570300978> **|**  Paused the music for you!");
+      return msg.channel.send(
+        "<a:B_A_FLAME:764235639570300978> **|**  Paused the music for you!"
+      );
     }
     return msg.channel.send("There is nothing playing.");
   } else if (command === "resume") {
     if (serverQueue && !serverQueue.playing) {
       serverQueue.playing = true;
       serverQueue.connection.dispatcher.resume();
-      return msg.channel.send("<a:gas:764201033655648316> **|**  Resumed the music for you!");
+      return msg.channel.send(
+        "<a:gas:764201033655648316> **|**  Resumed the music for you!"
+      );
     }
     return msg.channel.send("There is nothing playing.");
   } else if (command === "loop") {

@@ -16,11 +16,6 @@ module.exports = {
       return message.channel.send("I do not have permission to give roles");
     }
 
-    if (message.guild.me.roles.highest.position <= !target.position)
-      return message.reply(
-        `My Role isn't High Enough to Assign The Role! ${arole.name}`
-      );
-
     let target = message.mentions.members.first();
 
     if (!target)
