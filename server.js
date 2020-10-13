@@ -130,4 +130,6 @@ client.on("guildMemberAdd", async member => {
   client.channels.cache.get(chx).send(attachment);
 });
 
+
+
 client.login(process.env.TOKEN);
