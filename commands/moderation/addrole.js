@@ -33,9 +33,12 @@ module.exports = {
 
       .setThumbnail(target.user.displayAvatarURL({ dynamic: true }))
       .setColor("RANDOM")
+
+      .setFooter(`Role added by ${message.author.username}`, aicon)
+
       .setTimestamp()
       .setDescription(
-        `<a:tick1:764199777281114133> | changed role for ${target.user.username} added ${arole}`
+        `<a:tick1:764199777281114133> | ${arole} added role to ${target.user}`
       );
 
     await message.channel.send(embed);

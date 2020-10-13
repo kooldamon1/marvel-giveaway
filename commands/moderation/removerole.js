@@ -17,7 +17,8 @@ module.exports = {
     let ticon = target.user.avatarURL({ dynamic: true, size: 2048 });
     let aicon = message.author.avatarURL({ dynamic: true, size: 2048 });
 
-    const embed = new MessageEmbed().setAutho
+    const embed = new MessageEmbed()
+
       .setThumbnail(target.user.displayAvatarURL({ dynamic: true }))
       .setColor("RANDOM")
       .setDescription(
