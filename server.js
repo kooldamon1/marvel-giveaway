@@ -22,14 +22,15 @@ client.on("ready", async () => {
 
     function pickStatus() {
       let status = [
-        `${client.users.cache.size} users in ${client.guilds.cache.size} servers`,
-        "shelp ╏ ssupport",
-        "MADE BY :- SHADOW"
+        "athelp ╏ prefix :- at",
+        "MADE BY :- SHADOW & TYPHON",
+        "NISHU LOVELY VOICE",
+        "prefix :- at"
       ];
       let Status = Math.floor(Math.random() * status.length);
 
       client.user.setActivity(status[Status], {
-        type: "WATCHING"
+        type: "LISTENING"
       });
     }
     setInterval(pickStatus, 5000);
@@ -42,7 +43,7 @@ client.on("message", async message => {
   const prefixMention = new RegExp(`^<@!?${client.user.id}>( |)$`);
 
   if (message.content.match(prefixMention)) {
-    return message.reply(`HEY MY PREFIX IS  \` s \`  type shelp or ssupport`);
+    return message.reply(`HEY MY PREFIX IS  \` at \`  type athelp or ssupport`);
   }
 
   if (message.author.bot) return;
@@ -65,7 +66,6 @@ client.on("message", async message => {
   if (!command) command = client.commands.get(client.aliases.get(cmd));
 
   if (command) command.run(client, message, args);
-
 });
 
 client.on("guildMemberAdd", async member => {
@@ -129,7 +129,5 @@ client.on("guildMemberAdd", async member => {
   client.channels.cache.get(chx).send(wembed);
   client.channels.cache.get(chx).send(attachment);
 });
-
-
 
 client.login(process.env.TOKEN);
