@@ -1,4 +1,5 @@
 const discord = require("discord.js");
+const { MessageEmbed } = require("discord.js");
 
 module.exports = {
   name: "avatar",
@@ -20,7 +21,9 @@ module.exports = {
 
     let embed = new discord.MessageEmbed();
 
-    embed.setTitle(`<a:TNR_Loadbounce:764200903829356565> AVATAR <a:TNR_Loadbounce:764200903829356565>`)
+    embed.setTitle(
+      `<a:TNR_Loadbounce:764200903829356565> AVATAR of ${message.author.username} <a:TNR_Loadbounce:764200903829356565> `
+    );
     embed.setDescription(`[Download](${avatar})`);
     embed.setImage(avatar);
     embed.setColor("#277ECD");
