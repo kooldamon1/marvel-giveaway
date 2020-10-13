@@ -25,9 +25,11 @@ module.exports = {
     if (!prize) return message.channel.send(`No prize specified!`);
     message.channel.send(`*Giveaway created in ${channel}*`);
     let Embed = new MessageEmbed()
-      .setTitle(`New giveaway!`)
+      .setTitle(`GIVEAWAY <a:party:764200631803838545>`)
       .setDescription(
-        `The user ${message.author} is hosting a giveaway for the prize of **${prize}**`
+        `${message.author} 
+Is hosting a giveaway for <a:2628_rainbowdown:764201083068743710>
+**${prize}**`
       )
       .setTimestamp(Date.now() + ms(args[0]))
       .setColor(`BLUE`);
@@ -43,11 +45,11 @@ module.exports = {
 
       let winner = m.reactions.cache
         .get("🎉")
-        .users.cache.filter((u) => !u.bot)
+        .users.cache.filter(u => !u.bot)
         .random();
       channel.send(
         `The winner of the giveaway for **${prize}** is... ${winner}`
       );
     }, ms(args[0]));
-  },
+  }
 };
