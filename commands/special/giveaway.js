@@ -35,17 +35,17 @@ ${message.author}
       .setTimestamp(Date.now() + ms(args[0]))
       .setColor(`BLUE`);
     let m = await channel.send(Embed);
-    m.react("🎉");
+    m.react("764200631803838545");
     setTimeout(() => {
-      if (m.reactions.cache.get("🎉").count <= 1) {
-        message.channel.send(`Reactions: ${m.reactions.cache.get("🎉").count}`);
+      if (m.reactions.cache.get("764200631803838545").count <= 1) {
+        message.channel.send(`Reactions: ${m.reactions.cache.get("764200631803838545").count}`);
         return message.channel.send(
           `Not enough people reacted for me to start draw a winner!`
         );
       }
 
       let winner = m.reactions.cache
-        .get("🎉")
+        .get("764200631803838545")
         .users.cache.filter(u => !u.bot)
         .random();
       channel.send(
