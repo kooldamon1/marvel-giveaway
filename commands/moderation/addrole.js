@@ -31,7 +31,9 @@ module.exports = {
 
     const embed = new MessageEmbed()
 
+      .setThumbnail(target.user.displayAvatarURL({ dynamic: true }))
       .setColor("RANDOM")
+      .setTimestamp()
       .setDescription(
         `<a:tick1:764199777281114133> | changed role for ${target.user.username} added ${arole}`
       );

@@ -17,11 +17,12 @@ module.exports = {
     let ticon = target.user.avatarURL({ dynamic: true, size: 2048 });
     let aicon = message.author.avatarURL({ dynamic: true, size: 2048 });
 
-    const embed = new MessageEmbed()
-      .setAuthor(target.user.username, ticon)
+    const embed = new MessageEmbed().setAutho
       .setThumbnail(target.user.displayAvatarURL({ dynamic: true }))
       .setColor("RANDOM")
-      .setDescription(`${rrole} role removed from ${target}`)
+      .setDescription(
+        `<a:tick1:764199777281114133> | ${rrole} role removed from ${target}`
+      )
       .setFooter(`Role added by ${message.author.username}`, aicon)
       .setTimestamp();
 
