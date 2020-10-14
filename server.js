@@ -23,8 +23,7 @@ client.on("ready", async () => {
     function pickStatus() {
       let status = [
         "athelp ╏ prefix :- at",
-        "MADE BY :- SHADOW & TYPHON",
-        "TRUTH AND DARE AT 5 PM"
+        "MADE BY :- SHADOW & TYPHON"
       ];
       let Status = Math.floor(Math.random() * status.length);
 
