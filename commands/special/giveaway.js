@@ -42,7 +42,9 @@ ${message.author}
       if (m.reactions.cache.get("764200631803838545").count <= 1) {
         message.channel.send(`Reactions: ${m.reactions.cache.get("764200631803838545").count}`);
         return message.channel.send(
-          `Not enough people reacted for me to start draw a winner!`
+          `Not enough people reacted for me to start draw a winner!
+          
+`
         );
       }
 
