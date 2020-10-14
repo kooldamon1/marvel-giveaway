@@ -2,10 +2,10 @@ module.exports = {
   name: "slowmode",
   description: "Lets you set slowmode on the channel.",
   args: true,
-  usage: "<time>",
+  usage: "slowmode <time>",
   run: (client, message, args) => {
     const amount = parseInt(args[0]);
-    if (message.member.hasPermission("MANAGE_CHANNEL"))
+    if (message.member.hasPermission("MANAGAGE_CHANNEL","ADMINISTRATOR"))
       if (isNaN(amount))
         return message.channel.send("It doesn't seem to be valid number");
     if (args[0] === amount + "s") {

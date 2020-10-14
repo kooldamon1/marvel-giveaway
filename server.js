@@ -24,7 +24,6 @@ client.on("ready", async () => {
       let status = [
         "athelp ╏ prefix :- at",
         "MADE BY :- SHADOW & TYPHON",
-        "NISHU LOVELY VOICE",
         "prefix :- at"
       ];
       let Status = Math.floor(Math.random() * status.length);
