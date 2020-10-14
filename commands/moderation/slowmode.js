@@ -5,9 +5,10 @@ module.exports = {
   usage: "slowmode <time>",
   run: (client, message, args) => {
     const amount = parseInt(args[0]);
-    if (message.member.hasPermission("MANAGAGE_CHANNEL","ADMINISTRATOR"))
-      if (isNaN(amount))
-        return message.channel.send("It doesn't seem to be valid number");
+    if (message.member.hasPermission("ADMINISTRATOR"))
+      return message.channel.send("You don't have perms to set slowmode");
+    if (isNaN(amount))
+      return message.channel.send("It doesn't seem to be valid number");
     if (args[0] === amount + "s") {
       message.channel.setRateLimitPerUser(amount);
       if (amount > 1) {
