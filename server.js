@@ -16,22 +16,10 @@ client.aliases = new discord.Collection();
   require(`./handlers/${handler}`)(client);
 });
 
-client.on("ready", async () => {
-  try {
-    console.log(client.user.tag + " Has Logged In");
-
-    function pickStatus() {
-      let status = ["athelp ╏ prefix :- at", "MADE BY :- SHADOW & TYPHON"];
-      let Status = Math.floor(Math.random() * status.length);
-
-      client.user.setActivity(status[Status], {
-        type: "LISTENING"
-      });
-    }
-    setInterval(pickStatus, 5000);
-  } catch (err) {
-    console.log(err);
-  }
+client.on("ready", () => {
+  //When bot is ready
+  console.log("I am Reday to Go");
+  client.user.setActivity(db.get(`status`)); //It will set status :)
 });
 
 client.on("message", async message => {
