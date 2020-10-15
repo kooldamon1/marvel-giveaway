@@ -16,19 +16,29 @@ client.aliases = new discord.Collection();
   require(`./handlers/${handler}`)(client);
 });
 
-client.on("ready", () => {
-  //When bot is ready
-  console.log("I am Reday to Go");
-  client.user.setActivity(db.get(`status`)); //It will set status :)
+client.on("ready", async () => {
+  try {
+    console.log(client.user.tag + " Has Logged In");
+
+    function pickStatus() {
+      let status = ["athelp ╏ prefix :- at", "MADE BY :- SHADOW & TYPHON"];
+      let Status = Math.floor(Math.random() * status.length);
+
+      client.user.setActivity(status[Status], {
+        type: "LISTENING"
+      });
+    }
+    setInterval(pickStatus, 5000);
+  } catch (err) {
+    console.log(err);
+  }
 });
 
 client.on("message", async message => {
   const prefixMention = new RegExp(`^<@!?${client.user.id}>( |)$`);
 
   if (message.content.match(prefixMention)) {
-    return message.reply(
-      `HEY MY PREFIX IS  \` at \`  type athelp or atsupport`
-    );
+    return message.reply(`HEY MY PREFIX IS  \` at \`  type athelp or ssupport`);
   }
 
   if (message.author.bot) return;
