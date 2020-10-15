@@ -83,7 +83,7 @@ client.on("guildMemberAdd", async member => {
 
 𒃾────────╌╌╌╌╌╌┄┄┈┈┈𖣔︎
 
- | Username ${member.username} #${member.user.discriminatior}
+ | Username ${member.user.tag}
  | YOU CAN ENJOY IN  CHATTING 
 
 𒃾────────╌╌╌╌╌╌┄┄┈┈┈𖣔︎
