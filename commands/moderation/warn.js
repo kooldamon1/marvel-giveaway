@@ -42,6 +42,7 @@ module.exports = {
         "Please provide reason to warn - warn @mention <reason>"
       );
     }
+    message.delete()
 
     let warnings = db.get(`warnings_${message.guild.id}_${user.id}`);
 

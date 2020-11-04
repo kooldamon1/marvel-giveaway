@@ -2,6 +2,7 @@ const { MessageFlags } = require("discord.js");
 
 module.exports = {
   name: "reply",
+  aliases: ["say"],
   desciption: "say command",
   category: "fun",
   usage: "reply <message>",

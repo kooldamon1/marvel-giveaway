@@ -16,6 +16,7 @@ module.exports = {
     } else {
       target = message.author;
     }
+    message.delete()
 
     let avatar = target.displayAvatarURL({ dynamic: true, size: 2048 });
 

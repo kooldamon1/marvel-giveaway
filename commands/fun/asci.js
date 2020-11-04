@@ -14,6 +14,7 @@ module.exports = {
         `Please provide text for the ascii conversion!`
       );
     }
+    message.delete();
     let maxlen = 20;
     if (text.length > 20) {
       return message.channel.send(
