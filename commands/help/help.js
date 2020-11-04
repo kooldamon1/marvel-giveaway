@@ -58,7 +58,7 @@ __**CORONA COMMANDS**__ <a:heartbreak:764210242636349441>
       .addField(
         "BOT TEAM DEVELOPER <a:vshield:764199958257336321>",
         `
-<@479987197844652042> , <@663771450632568833>
+<@479987197844652042> 
 `
       )
       .setThumbnail(client.user.displayAvatarURL())
