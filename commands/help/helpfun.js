@@ -29,15 +29,13 @@ module.exports = {
 
 \`meme\` - random meme
 
-\`mw\` - random mobile wallpaper 
-
 \`slap\` - @user to slap
 
 \`punch\` - @user to punch 
 
 \`cry\` - makes you cry
 
-\`kill\` - kill yourself 
+\`pat\` - pat someone 
 
 \`kiss\` - kiss mention user
 
@@ -46,8 +44,6 @@ module.exports = {
 \`anime\` - random anime
 
 \`neko\` - just use it
-
-\`afk\` - sets afk for you 
 ━━━━━━━━━━━━━━━━━━━━━━━━━\
 `
       )
