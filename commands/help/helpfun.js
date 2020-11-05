@@ -9,45 +9,43 @@ module.exports = {
       .setTitle(`FUN COMMANDS <a:wink_pikachu:764199916456902666>`)
       .setDescription(
         `━━━━━━━━━━━━━━━━━━━━━━━━━
-\`advice\` - gives you advice 
+\`atadvice\` - gives you advice 
 
-\`suggest\` - suggest us something
+\`atsuggest\` - suggest us something
 
-\`ascii\` - chandges text to aescii
+\`atascii\` - chandges text to aescii
 
-\`dog\` - random dog image 
+\`atdog\` - random dog image 
 
-\`fact\` - random fact 
+\`atfact\` - random fact 
 
-\`hug\` - mention user to hug 
+\`athug\` - mention user to hug 
 
-\`joke\` - random joke
+\`atjoke\` - random joke
 
-\`kpop\` - kpop image random
+\`atkpop\` - kpop image random
 
-\`math\` - solve problem 
+\`atmath\` - solve problem 
 
-\`meme\` - random meme
+\`atmeme\` - random meme
 
-\`mw\` - random mobile wallpaper 
+\`atmw\` - random mobile wallpaper 
 
-\`slap\` - @user to slap
+\`atslap\` - @user to slap
 
-\`punch\` - @user to punch 
+\`atpunch\` - @user to punch 
 
-\`cry\` - makes you cry
+\`atcry\` - makes you cry
 
-\`kill\` - kill yourself 
+\`atkill\` - kill yourself 
 
-\`kiss\` - kiss mention user
+\`atkiss\` - kiss mention user
 
-\`cat\` - random cat pic
+\`atcat\` - random cat pic
 
-\`anime\` - random anime
+\`atanime\` - random anime
 
-\`neko\` - just use it
-
-\`afk\` - sets afk for you 
+\`atneko\` - just use it 
 ━━━━━━━━━━━━━━━━━━━━━━━━━\
 `
       )

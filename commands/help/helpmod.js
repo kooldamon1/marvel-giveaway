@@ -9,29 +9,29 @@ module.exports = {
       .setTitle(`MODERATION COMMANDS <a:op11:764200185253199892>`)
       .setDescription(
         `━━━━━━━━━━━━━━━━━━━━━━━━━
-\`addrole\` - @user @role
+\`ataddrole\` - @user @role
 
-\`removerole,rmrole,-\` - @user @role 
+\`atremoverole,atrmrole,-\` - @user @role 
 
-\`clear,purge,c\` - with no of messages to be deleted
+\`atclear,atpurge,atc\` - with no of messages to be deleted
 
-\`ban\` - ban the mentioned user
+\`atban\` - ban the mentioned user
 
-\`kick\` - kick the mentioneduser
+\`atkick\` - kick the mentioneduser
 
-\`voicekick\` - disconnect the mention user from vc
+\`atvoicekick\` - disconnect the mention user from vc
 
-\`mute\` - mute user (require the muted role)
+\`atmute\` - mute user (require the muted role)
 
-\`unmute\` - unmute user
+\`atunmute\` - unmute user
 
-\`slowmode\` - in channel with time
+\`atslowmode\` - in channel with time
 
-\`warn\` - wanr user with reason
+\`atwarn\` - wanr user with reason
 
-\`warnings\` - show warnings of mentioned user
+\`atwarnings\` - show warnings of mentioned user
 
-\`resetwarns\` - reset all warnings of mentioned user
+\`atresetwarns\` - reset all warnings of mentioned user
 ━━━━━━━━━━━━━━━━━━━━━━━━━\
 `
       )
