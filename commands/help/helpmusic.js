@@ -13,25 +13,25 @@ module.exports = {
 
       .setDescription(
         `━━━━━━━━━━━━━━━━━━━━━━━━━
-\`atplay,atp\` - plays with name
+\`play,p\` - plays with name
 
-\`atsearch,atsc\` - search a song
+\`search,sc\` - search a song
 
-\`atskip\` - next track
+\`skip\` - next track
 
-\`atstop\` - stops music 
+\`stop\` - stops music 
 
-\`atpause\` - pause music 
+\`pause\` - pause music 
 
-\`atresume\` - resumes paused song
+\`resume\` - resumes paused song
 
-\`atnowplaying,atnp\` - shows current playing song
+\`nowplaying,np\` - shows current playing song
 
-\`atqueue\` - shows play list
+\`queue\` - shows play list
 
-\`atvolume,atvol\` - changes the volume 
+\`volume,vol\` - changes the volume 
 
-\`atloop\` - loops the music
+\`loop\` - loops the music
 ━━━━━━━━━━━━━━━━━━━━━━━━━\
 `
       )

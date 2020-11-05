@@ -38,41 +38,7 @@ client.on("message", async message => {
   const prefixMention = new RegExp(`^<@!?${client.user.id}>( |)$`);
 
   if (message.content.match(prefixMention)) {
-    return message.reply(`PREFIX FOR THE BOT IS = at
-
-  __**MODERATION COMMANDS**__ <a:op11:764200185253199892>
-\`helpmod\` all mod commands 
- 
-__**FUN COMMANDS**__ <a:wink_pikachu:764199916456902666>
-\`helpfun\` all fun commands
-
-__**INFORMATION COMMANDS**__ <a:load:764201016287559712>
-\`helpinfo\` all info commands
-
-__**MUSIC COMMANDS**__ <a:musicau:764209002741235745>
-\`helpmusic\` all music commands
-
-__**NSFW COMMANDS**__ <a:Cross:764209193790996512>
-\`I AM CLEAN BOT\`
-
-__**WELCOME COMMANDS**__ <a:welcome:764200994837758022>
-\`setwelcome\` setwelcome #channel
-\`setmessage\` setmessage <text you want to set>
-\`resetwelcomimg\` reset welcome immage
-\`resetwelcomemsg\` reset welcome message
-\`delwelcome\` delete welcome message
-
-__**SPECIAL COMMANDS**__ <a:party:764200631803838545>
-\`giveaway\` giveaway <time channel prize> time in m,h,d format
-\`math\` do maths for you 
-\`announce\` announce something for you in embed
-\`weather <area>\` weather area name 
-
-__**CORONA COMMANDS**__ <a:heartbreak:764210242636349441>
-\`corona all\` total deatails about corona on earth
-\`corona <country>\` total corona details of named country
- 
-**__If Any Command Is Not Working Contact The Bot Owner__**`);
+    return message.reply(`HEY MY PREFIX IS  \` at \`  type athelp or ssupport`);
   }
 
   if (message.author.bot) return;
