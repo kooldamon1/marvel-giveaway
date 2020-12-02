@@ -9,7 +9,7 @@ module.exports = {
       .setTitle(
         `__**INFORMATION ABOUT BOT**__ <a:2628_rainbowdown:764201083068743710>`
       )
-      .addField("BOT NAME <a:vshield:764199958257336321>", `SHADOW OFFICIAL™`)
+      .addField("BOT NAME <a:vshield:764199958257336321>", `SHED LIGHT`)
       .addField(
         "BOT DEVELOPER <a:vshield:764199958257336321>",
         `

@@ -21,11 +21,11 @@ client.on("ready", async () => {
     console.log(client.user.tag + " Has Logged In");
 
     function pickStatus() {
-      let status = ["athelp ╏ prefix :- at", "MADE BY :- SHADOW & TYPHON"];
+      let status = ["shelp ╏ prefix :- s", "MADE BY :- SHADOW"];
       let Status = Math.floor(Math.random() * status.length);
 
       client.user.setActivity(status[Status], {
-        type: "LISTENING"
+        type: "PLAYING"
       });
     }
     setInterval(pickStatus, 5000);
