@@ -12,7 +12,7 @@ dependencies:
   imdb-api: 4.4.1
   mathjs: 8.1.0
   moment: 2.29.1
-  mongoose: 5.11.7
+  mongoose: 5.11.9
   ms: 2.1.3
   neko-love: 2.0.2
   neko-love-wrapper: 1.2.1
@@ -31,7 +31,7 @@ dependencies:
   snekfetch: 4.0.4
   something-random-on-discord: 0.0.1
   weather-js: 2.0.0
-  ytdl-core: 4.1.4
+  ytdl-core: 4.2.1
 packages:
   /@aero/centra/1.0.6:
     dev: false
@@ -462,21 +462,21 @@ packages:
       integrity: sha512-MY5KFYUru0y74IsgM/9asDwb3ERxWxXEu3CRCZEvE7DtT86y1bR1XgtlSliMrptjz4qbivNGMQSvUBpEFJDp1A==
   /@types/bson/4.0.3:
     dependencies:
-      '@types/node': 14.14.12
+      '@types/node': 14.14.16
     dev: false
     resolution:
       integrity: sha512-mVRvYnTOZJz3ccpxhr3wgxVmSeiYinW+zlzQz3SXWaJmD1DuL05Jeq7nKw3SnbKmbleW5qrLG5vdyWe/A9sXhw==
   /@types/mongodb/3.6.3:
     dependencies:
       '@types/bson': 4.0.3
-      '@types/node': 14.14.12
+      '@types/node': 14.14.16
     dev: false
     resolution:
       integrity: sha512-6YNqGP1hk5bjUFaim+QoFFuI61WjHiHE1BNeB41TA00Xd2K7zG4lcWyLLq/XtIp36uMavvS5hoAUJ+1u/GcX2Q==
-  /@types/node/14.14.12:
+  /@types/node/14.14.16:
     dev: false
     resolution:
-      integrity: sha512-ASH8OPHMNlkdjrEdmoILmzFfsJICvhBsFfAum4aKZ/9U4B6M6tTmTPh+f3ttWdD74CEGV5XvXWkbyfSdXaTd7g==
+      integrity: sha512-naXYePhweTi+BMv11TgioE2/FXU4fSl29HAH1ffxVciNsH3rYXjNP2yM8wqmSm7jS20gM8TIklKiTen+1iVncw==
   /@ungap/url-search-params/0.2.2:
     dev: false
     resolution:
@@ -623,15 +623,15 @@ packages:
     dev: false
     resolution:
       integrity: sha1-pDAdOJtqQ/m2f/PKEaP2Y342Dp4=
-  /better-sqlite3/7.1.1:
+  /better-sqlite3/7.1.2:
     dependencies:
       bindings: 1.5.0
       prebuild-install: 5.3.6
-      tar: 4.4.10
+      tar: 6.0.5
     dev: false
     requiresBuild: true
     resolution:
-      integrity: sha512-AkvGGyhAVZhRBOul2WT+5CB2EuveM3ZkebEKe1wxMqDZUy1XB/1RBgM66t0ybHC4DIni8+pr7NaLqEX87NUTwg==
+      integrity: sha512-8FWYnJ6Bx94MBX03J5Ka7sTRlvXXMEm4FW2Op7nM8ErQZeyALYLmSlbMBnfr4cMpS0tj0aYZv0a+26G2YJuIjg==
   /bindings/1.5.0:
     dependencies:
       file-uri-to-path: 1.0.0
@@ -768,6 +768,12 @@ packages:
     dev: false
     resolution:
       integrity: sha512-jJ0bqzaylmJtVnNgzTeSOs8DPavpbYgEr/b0YL8/2GO3xJEhInFmhKMUnEJQjZumK7KXGFhUy89PrsJWlakBVg==
+  /chownr/2.0.0:
+    dev: false
+    engines:
+      node: '>=10'
+    resolution:
+      integrity: sha512-bIomtDF5KGpdogkLd9VspvFzk9KfpyyGlS8YFVZl7TGPBHL5snIOnxeshwVgPteQ9b4Eydl+pVbIyE1DcvCWgQ==
   /code-point-at/1.1.0:
     dev: false
     engines:
@@ -1162,10 +1168,10 @@ packages:
       node: '>= 0.6'
     resolution:
       integrity: sha1-mMI9qxF1ZXuMBXPozszZGw/xjIQ=
-  /fraction.js/4.0.12:
+  /fraction.js/4.0.13:
     dev: false
     resolution:
-      integrity: sha512-8Z1K0VTG4hzYY7kA/1sj4/r1/RWLBD3xwReT/RCrUCbzPszjNQCCsy3ktkU/eaEqX3MYa4pY37a52eiBlPMlhA==
+      integrity: sha512-E1fz2Xs9ltlUp+qbiyx9wmt2n9dRzPsS11Jtdb8D2o+cC7wr9xkkKsVKJuBX0ST+LVS+LhLO+SbLJNtfWcJvXA==
   /fresh/0.5.2:
     dev: false
     engines:
@@ -1182,6 +1188,14 @@ packages:
     dev: false
     resolution:
       integrity: sha512-GWSSJGFy4e9GUeCcbIkED+bgAoFyj7XF1mV8rma3QW4NIqX9Kyx79N/PF61H5udOV3aY1IaMLs6pGbH71nlCTA==
+  /fs-minipass/2.1.0:
+    dependencies:
+      minipass: 3.1.3
+    dev: false
+    engines:
+      node: '>= 8'
+    resolution:
+      integrity: sha512-V/JgOLFCS+R6Vcq0slCuaeWEdNC3ouDlJMNIsacH2VtALiu9mV4LPrHc5cDl8k5aw6J8jwgWWpiTo5RYhmIzvg==
   /fs.realpath/1.0.0:
     dev: false
     resolution:
@@ -1270,10 +1284,6 @@ packages:
     dev: false
     resolution:
       integrity: sha512-At1LaKtcqh2jiP8xfE2sDGT9IshIki6FqsgLwn2y7FzAvlFJRtpUsSPh3yWjWIQIvxi/GPF07IBqSI8WhPL/gQ==
-  /html-entities/1.3.1:
-    dev: false
-    resolution:
-      integrity: sha512-rhE/4Z3hIhzHAUKbW8jVcCyuT5oJCXXqhN/6mXXVCpzTmvJnoH2HL/bt3EZ6p55jbFJBeAe1ZNpL5BugLujxNA==
   /htmlparser2/2.6.0:
     dependencies:
       domelementtype: 1.3.1
@@ -1366,10 +1376,10 @@ packages:
     dev: false
     resolution:
       integrity: sha512-k/vGaX4/Yla3WzyMCvTQOXYeIHvqOKtnqBduzTHpzpQZzAskKMhZ2K+EnBiSM9zGSoIFeMpXKxa4dYeZIQqewQ==
-  /ini/1.3.7:
+  /ini/1.3.8:
     dev: false
     resolution:
-      integrity: sha512-iKpRpXP+CrP2jyrxvg1kMUpXDyRUFDWurxbnVT1vQPx+Wz9uCYsMIqYuSBLV+PAaZG/d7kRLKRFc9oDMsH+mFQ==
+      integrity: sha512-JV/yugV2uzW5iMRSiZAyDtQd+nxtUnjeLt0acNdw98kKLrvuRVyB80tsREOE7yvGVgalhZ6RNXCmEHkUKBKxew==
   /ipaddr.js/1.9.1:
     dev: false
     engines:
@@ -1514,7 +1524,7 @@ packages:
       complex.js: 2.0.11
       decimal.js: 10.2.1
       escape-latex: 1.2.0
-      fraction.js: 4.0.12
+      fraction.js: 4.0.13
       javascript-natural-sort: 0.7.1
       seedrandom: 3.0.5
       tiny-emitter: 2.1.0
@@ -1602,12 +1612,29 @@ packages:
     dev: false
     resolution:
       integrity: sha512-wxfUjg9WebH+CUDX/CdbRlh5SmfZiy/hpkxaRI16Y9W56Pa75sWgd/rvFilSgrauD9NyFymP/+JFV3KwzIsJeg==
+  /minipass/3.1.3:
+    dependencies:
+      yallist: 4.0.0
+    dev: false
+    engines:
+      node: '>=8'
+    resolution:
+      integrity: sha512-Mgd2GdMVzY+x3IJ+oHnVM+KG3lA5c8tnabyJKmHSaG2kAGpudxuOf8ToDkhumF7UzME7DecbQE9uOZhNm7PuJg==
   /minizlib/1.3.3:
     dependencies:
       minipass: 2.9.0
     dev: false
     resolution:
       integrity: sha512-6ZYMOEnmVsdCeTJVE0W9ZD+pVnE8h9Hma/iOwwRDsdQoePpoX56/8B6z3P9VNwppJuBKNRuFDRNRqRWexT9G9Q==
+  /minizlib/2.1.2:
+    dependencies:
+      minipass: 3.1.3
+      yallist: 4.0.0
+    dev: false
+    engines:
+      node: '>= 8'
+    resolution:
+      integrity: sha512-bAxsR8BVfj60DWXHE3u30oHzfl4G7khkSuPW+qvpd7jFRHm7dLxOjUk1EHACJ/hxLY8phGJ0YhYHZo7jil7Qdg==
   /mkdirp-classic/0.5.3:
     dev: false
     resolution:
@@ -1619,6 +1646,13 @@ packages:
     hasBin: true
     resolution:
       integrity: sha512-NKmAlESf6jMGym1++R0Ra7wvhV+wFW63FaSOFPwRahvea0gMUcGUhVeAg/0BC0wiv9ih5NYPB1Wn1UEI1/L+xQ==
+  /mkdirp/1.0.4:
+    dev: false
+    engines:
+      node: '>=10'
+    hasBin: true
+    resolution:
+      integrity: sha512-vVqVZQyf3WLx2Shd0qJ9xuvqgAyKPLAiqITEtqW0oIUjzo3PePDd6fW9iFz30ef7Ysp/oiWqbhszeGWW2T6Gzw==
   /moment/2.29.1:
     dev: false
     resolution:
@@ -1643,7 +1677,7 @@ packages:
       mongoose: '*'
     resolution:
       integrity: sha512-Yo/7qQU4/EyIS8YDFSeenIvXxZN+ld7YdV9LqFVQJzTLye8unujAWPZ4NWKfFA+RNjh+wvTWKY9Z3E5XM6ZZiQ==
-  /mongoose/5.11.7:
+  /mongoose/5.11.9:
     dependencies:
       '@types/mongodb': 3.6.3
       bson: 1.1.5
@@ -1661,7 +1695,7 @@ packages:
     engines:
       node: '>=4.0.0'
     resolution:
-      integrity: sha512-9FQ3BNPMU7GVHw1jVrxPXQpVJWuMESEO5bf4SWgI4S6+OT1Kk6fdLGWibUh2UAVSolfizljOZQQ6Z+cTLyoFOw==
+      integrity: sha512-lmG6R64jtGGxqtn88BkkY+v470LUfGgyTKUyjswQ5c01GNgQvxA0kQd8h+tm0hZb639hKNRxL9ZBQlLleUpuIQ==
   /mpath/0.8.1:
     dev: false
     engines:
@@ -2048,7 +2082,7 @@ packages:
       integrity: sha512-CsGs8ZYb39zu0WLkeOhe0NMePqgYdAuCqxOYKDR5LVCytDZYMGx3Bb+xypvQvPHVPijRXB0HZNFllCzHRe4gEA==
   /quick.db/7.1.3:
     dependencies:
-      better-sqlite3: 7.1.1
+      better-sqlite3: 7.1.2
       lodash: 4.17.20
     dev: false
     resolution:
@@ -2073,7 +2107,7 @@ packages:
   /rc/1.2.8:
     dependencies:
       deep-extend: 0.6.0
-      ini: 1.3.7
+      ini: 1.3.8
       minimist: 1.2.5
       strip-json-comments: 2.0.1
     dev: false
@@ -2438,11 +2472,11 @@ packages:
       chownr: 1.1.4
       mkdirp-classic: 0.5.3
       pump: 3.0.0
-      tar-stream: 2.1.4
+      tar-stream: 2.2.0
     dev: false
     resolution:
       integrity: sha512-V0r2Y9scmbDRLCNex/+hYzvp/zyYjvFbHPNgVTKfQvVrb6guiE/fxP+XblDNR011utopbkex2nM4dHNV6GDsng==
-  /tar-stream/2.1.4:
+  /tar-stream/2.2.0:
     dependencies:
       bl: 4.0.3
       end-of-stream: 1.4.4
@@ -2453,21 +2487,7 @@ packages:
     engines:
       node: '>=6'
     resolution:
-      integrity: sha512-o3pS2zlG4gxr67GmFYBLlq+dM8gyRGUOvsrHclSkvtVtQbjV0s/+ZE8OpICbaj8clrX3tjeHngYGP7rweaBnuw==
-  /tar/4.4.10:
-    dependencies:
-      chownr: 1.1.4
-      fs-minipass: 1.2.7
-      minipass: 2.9.0
-      minizlib: 1.3.3
-      mkdirp: 0.5.5
-      safe-buffer: 5.2.1
-      yallist: 3.1.1
-    dev: false
-    engines:
-      node: '>=4.5'
-    resolution:
-      integrity: sha512-g2SVs5QIxvo6OLp0GudTqEf05maawKUxXru104iaayWA09551tFCTI8f1Asb4lPfkBr91k07iL4c11XO3/b0tA==
+      integrity: sha512-ujeqbceABgwMZxEJnk2HDY2DlnUZ+9oEcb1KzTVfYHio0UE6dG71n60d8D2I4qNvleWrrXpmjpt7vZeF1LnMZQ==
   /tar/4.4.13:
     dependencies:
       chownr: 1.1.4
@@ -2482,6 +2502,19 @@ packages:
       node: '>=4.5'
     resolution:
       integrity: sha512-w2VwSrBoHa5BsSyH+KxEqeQBAllHhccyMFVHtGtdMpF4W7IRWfZjFiQceJPChOeTsSDVUpER2T8FA93pr0L+QA==
+  /tar/6.0.5:
+    dependencies:
+      chownr: 2.0.0
+      fs-minipass: 2.1.0
+      minipass: 3.1.3
+      minizlib: 2.1.2
+      mkdirp: 1.0.4
+      yallist: 4.0.0
+    dev: false
+    engines:
+      node: '>= 10'
+    resolution:
+      integrity: sha512-0b4HOimQHj9nXNEAA7zWwMM91Zhhba3pspja6sQbgTpynOJf+bkjBnfybNYzbpLbnwXnbyB4LOREvlyXLkCHSg==
   /timm/1.7.1:
     dev: false
     resolution:
@@ -2669,9 +2702,12 @@ packages:
     dev: false
     resolution:
       integrity: sha512-a4UGQaWPH59mOXUYnAG2ewncQS4i4F43Tv3JoAM+s2VDAmS9NsK8GpDMLrCHPksFT7h3K6TOoUNn2pb7RoXx4g==
-  /ytdl-core/4.1.4:
+  /yallist/4.0.0:
+    dev: false
+    resolution:
+      integrity: sha512-3wdGidZyq5PB084XLES5TpOSRA3wjXAlIWMhum2kRcv/41Sn2emQ0dycQW4uZXLejwKvg6EsvbdlVL+FYEct7A==
+  /ytdl-core/4.2.1:
     dependencies:
-      html-entities: 1.3.1
       m3u8stream: 0.8.3
       miniget: 4.1.0
       sax: 1.2.4
@@ -2679,7 +2715,7 @@ packages:
     engines:
       node: '>=10'
     resolution:
-      integrity: sha512-f9M2ctrQNH9/X+jOZ/4iA4h6DvNcyuJ+fDvacheeaxtV7sX13qaNmQgNAe7UeTlJWh7Dn3RHQ6imqJJh5beGQg==
+      integrity: sha512-7zAoJiWpaBGgiAUCQuvKBuWom7tmSCV0A70gRdrPxR96yQoJOrCZkW6Wg1CofvPtAeQVWTVWThC8bXRsE+SBeA==
 registry: 'https://registry.npmjs.org/'
 shrinkwrapMinorVersion: 9
 shrinkwrapVersion: 3
@@ -2695,10 +2731,10 @@ specifiers:
   fs: ^0.0.2
   hastebin-gen: ^2.0.5
   imdb-api: ^4.4.0
-  mathjs: ^8.0.0
+  mathjs: ^8.0.1
   moment: ^2.29.1
-  mongoose: ^5.11.2
-  ms: ^2.1.2
+  mongoose: ^5.11.9
+  ms: ^2.1.3
   neko-love: ^2.0.2
   neko-love-wrapper: ^1.2.1
   nekos.life: ^2.0.7
@@ -2706,7 +2742,7 @@ specifiers:
   opusscript: ^0.0.7
   os: ^0.1.1
   path: ^0.12.7
-  quick.db: ^7.1.1
+  quick.db: ^7.1.2
   react-anime: ^3.0.3
   reddit: ^1.2.1
   request: ^2.88.2
@@ -2716,4 +2752,4 @@ specifiers:
   snekfetch: ^4.0.4
   something-random-on-discord: ^0.0.1
   weather-js: ^2.0.0
-  ytdl-core: ^4.1.2
+  ytdl-core: ^4.2.1

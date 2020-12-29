@@ -1,73 +1,67 @@
 const discord = require("discord.js");
-const client = new discord.Client();
 
 module.exports = {
   name: "help",
+
+  aliases: [""],
+
   category: "help",
-  description: "SHADOW OP ",
+
+  description: "BOT GET SOON UPDATES ",
+
   run: async (client, message, args) => {
     let embed = new discord.MessageEmbed()
-      .setTitle(`BOT HELP MENU <a:India:764200316156510218> `)
+
+      .setTitle(`BOT  HELP MENU `)
 
       .setDescription(
-        `\
-    __**MODERATION COMMANDS**__ <a:op11:764200185253199892>
-\`helpmod\` all mod commands 
+        `
+
+__**MODERATION COMMANDS**__ 🔧
+
+\`addrole,removerole,clear[purge],ban,kick,voicekick,mute,unmute,slowmode,warn,warnings,resetwarns\`
+
+__**FUN COMMANDS**__ 🙃
+
+\`advice,suggest,ascii,dog,fact,hug,joke,kpop,math,meme,mw,slap,punch,cry\`
+
+__**INFORMATION COMMANDS**__ 💬
+
+\`avatar,botinfo,serverinfo,hastebin,imdb,membercount,weather,ping,pokemon,servericon,,whois,userinfo\`
+
+__**NSFW COMMANDS**__ ❌
+
+\`no nsfw in the bot\`
+
+__**WELCOME COMMANDS**__ 🎉
+
+\`setwelcome,setmessage\`
+
+__**SPECIAL COMMANDS**__ 👑
+
+\`giveaway,math,announce,emoji,weather \`
+
+__**CORONA COMMANDS**__ ⚠️
+
+\`corona all, corona<country>\`
+
  
-__**FUN COMMANDS**__ <a:wink_pikachu:764199916456902666>
-\`helpfun\` all fun commands
 
-__**INFORMATION COMMANDS**__ <a:load:764201016287559712>
-\`helpinfo\` all info commands
+If any contact is not working contact the bot owner
 
-__**MUSIC COMMANDS**__ <a:musicau:764209002741235745>
-\`helpmusic\` all music commands
-
-__**NSFW COMMANDS**__ <a:Cross:764209193790996512>
-\`I AM CLEAN BOT\`
-
-__**WELCOME COMMANDS**__ <a:welcome:764200994837758022>
-\`setwelcome\` setwelcome #channel
-\`setmessage\` setmessage <text you want to set>
-\`resetwelcomimg\` reset welcome immage
-\`resetwelcomemsg\` reset welcome message
-\`delwelcome\` delete welcome message
-
-__**SPECIAL COMMANDS**__ <a:party:764200631803838545>
-\`giveaway\` giveaway <time channel prize> time in m,h,d format
-\`math\` do maths for you 
-\`announce\` announce something for you in embed
-\`weather <area>\` weather area name 
-
-__**CORONA COMMANDS**__ <a:heartbreak:764210242636349441>
-\`corona all\` total deatails about corona on earth
-\`corona <country>\` total corona details of named country
- 
-**__If Any Command Is Not Working Contact The Bot Owner__**
 `
       )
 
-      .addField(
-        "BOT DEVELOPER <a:vshield:764199958257336321>",
-
-        `
-
-<@672027578181353473>`
-      )
-
-      .addField(
-        "BOT TEAM DEVELOPER <a:vshield:764199958257336321>",
-        `
-<@479987197844652042> 
-`
-      )
       .setThumbnail(client.user.displayAvatarURL())
-      .setColor("#93BFE6")
-      .setFooter(`ShaDoW Op`)
+
+      .setColor("#35CB31")
+
+      .setFooter(`HELP MENU | Damon Op 🖤 `)
+
       .setTimestamp((message.timestamp = Date.now()));
 
     await message.channel.send(embed);
 
-    message.react(client.emojis.cache.get("764200316156510218"));
+    message.react("764200316156510218");
   }
 };
