@@ -14,7 +14,7 @@ const client = new discord.Client({
   disableEveryone: false
 });
 
-require("./brvlogger.js");
+//require("./brvlogger.js");
 
 require("./uptime.js");
 
@@ -116,7 +116,7 @@ client.on("message", async message => {
 });
 
 client.on("guildMemberAdd", async member => {
-  let chx = db.get(`welchannel_${member.guild.id}`);
+  let chx = client.channels.cache.get(`783674782335238154`);
 
   if (chx === null) {
     return;
@@ -172,7 +172,7 @@ client.on("guildMemberAdd", async member => {
 
     .setDescription(msg);
 
-  client.channels.cache.get(chx).send(msg);
+  client.channels.cache.get("783674782335238154").send(msg);
 
   //  client.channels.cache.get(chx).send(attachment);
 });
