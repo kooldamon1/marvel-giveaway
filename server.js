@@ -16,7 +16,7 @@ const client = new discord.Client({
 
 require("./brvlogger.js");
 
-//require("./uptime.js");
+require("./uptime.js");
 
 //require("./op.js");
 
@@ -55,7 +55,7 @@ client.on("ready", async () => {
     //  }
 
     client.on("message", async message => {
-      const prefixMention = new RegExp(`^<@!?${client.user.username}>( |)$`);
+      const prefixMention = new RegExp(`^<@!?${client.user.id}>( |)$`);
 
       if (message.content.match(prefixMention)) {
         let mention = new discord.MessageEmbed()
