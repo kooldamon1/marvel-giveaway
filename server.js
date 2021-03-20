@@ -10,8 +10,6 @@ const client = new discord.Client({
 });
 //require("./brvlogger.js");
 require("./uptime.js");
-require("./logger.js");
-//require("./ticket/index.js")
 client.commands = new discord.Collection();
 client.aliases = new discord.Collection();
 ["command"].forEach(handler => {
