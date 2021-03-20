@@ -4,6 +4,7 @@ const db = require("quick.db");
 const { CanvasSenpai } = require("canvas-senpai");
 const canva = new CanvasSenpai();
 const discord = require("discord.js");
+const { GiveawaysManager } = require("discord-giveaways");
 const client = new discord.Client({
   disableEveryone: false
 });
@@ -65,73 +66,82 @@ client.on("ready", async () => {
   }
 });
 
-/*client.on("message", async message => {
-  if (message.content.match(`^<@!?672027578181353473>( |)$`)) {
-    return message.react(`764200230152830977`);
+const GiveawayManagerWithOwnDatabase = class extends GiveawaysManager {
+  // This function is called when the manager needs to get all the giveaway stored in the database.
+  async getAllGiveaways() {
+    // Get all the giveaway in the database
+    return db.get("giveaways");
+  }
+  // This function is called when a giveaway needs to be saved in the database (when a giveaway is created or when a giveaway is edited).
+  async saveGiveaway(messageID, giveawayData) {
+    // Add the new one
+    db.push("giveaways", giveawayData);
+    // Don't forget to return something!
+    return true;
+  }
+
+  async editGiveaway(messageID, giveawayData) {
+    // Gets all the current giveaways
+    const giveaways = db.get("giveaways");
+    // Remove the old giveaway from the current giveaways ID
+    const newGiveawaysArray = giveaways.filter(
+      giveaway => giveaway.messageID !== messageID
+    );
+    // Push the new giveaway to the array
+    newGiveawaysArray.push(giveawayData);
+    // Save the updated array
+    db.set("giveaways", newGiveawaysArray);
+    // Don't forget to return something!
+    return true;
+  }
+
+  // This function is called when a giveaway needs to be deleted from the database.
+  async deleteGiveaway(messageID) {
+    // Remove the giveaway from the array
+    const newGiveawaysArray = db
+      .get("giveaways")
+      .filter(giveaway => giveaway.messageID !== messageID);
+    // Save the updated array
+    db.set("giveaways", newGiveawaysArray);
+    // Don't forget to return something!
+    return true;
+  }
+};
+
+if (!db.get("giveaways")) db.set("giveaways", []);
+
+// Create a new instance of your new class
+
+const manager = new GiveawayManagerWithOwnDatabase(client, {
+  storage: false,
+  updateCountdownEvery: 5000,
+  default: {
+    botsCanWin: false,
+    exemptPermissions: ["MANAGE_MESSAGES", "ADMINISTRATOR"],
+    embedColor: "RED",
+    reaction: "🎉"
   }
 });
 
-client.on("guildMemberAdd", async member => {
-  let chx = client.channels.cache.get(`783674782335238154`);
-
-  if (chx === null) {
-    return;
+client.giveawaysManager = manager;
+// We now have a client.giveawaysManager property to manage our giveaways!
+client.giveawaysManager.on(
+  "giveawayReactionAdded",
+  (giveaway, member, reaction) => {
+    console.log(
+      `${member.user.tag} entered giveaway #${giveaway.messageID} (${reaction.emoji.name})`
+    );
   }
+);
 
-  let default_url = `https://cdn.discordapp.com/attachments/800690453484929095/801910235001651280/2020-pubg-game-4k-91-3840x2160.jpg`;
-
-  let default_msg = `**Welcome {member} To ${member.guild}** <a:vshield:764199958257336321> 
-
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-
-<a:rainbowleft:764200797629186049> **Make Sure To Take Self Roles.**
-
-<a:rainbowleft:764200797629186049> **Make Sure You Read Rules.**
-
-<a:rainbowleft:764200797629186049> **Have Fun In Chatting.**`;
-
-  let m1 = db.get(`msg_${member.guild.id}`);
-
-  if (!m1) m1 = default_msg;
-
-  const msg = m1
-
-    .replace("{member}", member.user)
-
-    .replace("{member.guild}", member.guild);
-
-  let url = db.get(`url_${member.guild.id}`);
-
-  if (url === null) url = default_url;
-
-  // let data = await canva.welcome(member, {
-
-  //   link: "https://wallpapercave.com/wp/wp5128415.jpg"
-
-  // });
-
-  // const attachment = new discord.MessageAttachment(data, "welcome-image.png");
-
-  let wembed = new discord.MessageEmbed()
-
-    .setAuthor(
-      member.guild
-
-      //     member.user.username,
-
-      //   member.user.avatarURL({ dynamic: true, size: 2048 })
-    )
-
-    .setColor("RANDOM")
-
-    .setImage(url)
-
-    .setDescription(msg);
-
-  client.channels.cache.get("783674782335238154").send(msg);
-
-  //  client.channels.cache.get(chx).send(attachment);
-});*/
+client.giveawaysManager.on(
+  "giveawayReactionRemoved",
+  (giveaway, member, reaction) => {
+    console.log(
+      `${member.user.tag} unreact to giveaway #${giveaway.messageID} (${reaction.emoji.name})`
+    );
+  }
+);
 
 client.login(process.env.TOKEN);
 
