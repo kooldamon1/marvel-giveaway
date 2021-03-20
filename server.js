@@ -1,115 +1,71 @@
 const { prefix, sserver } = require("./config.json");
-
 const { config } = require("dotenv");
-
 const db = require("quick.db");
-
 const { CanvasSenpai } = require("canvas-senpai");
-
 const canva = new CanvasSenpai();
-
 const discord = require("discord.js");
-
 const client = new discord.Client({
   disableEveryone: false
 });
-
 //require("./brvlogger.js");
-
 require("./uptime.js");
-
 //require("./op.js");
-
 //require("./ticket/index.js")
-
 client.commands = new discord.Collection();
-
 client.aliases = new discord.Collection();
-
 ["command"].forEach(handler => {
   require(`./handlers/${handler}`)(client);
 });
-
 client.on("ready", async () => {
-  const channel = client.channels.cache.get("805785436399861790");
-
-  channel.join().then(connection => {
-    connection.voice.setSelfDeaf(true);
-  });
-
+  // const channel = client.channels.cache.get("805785436399861790");
+  //  channel.join().then(connection => {
+  //    connection.voice.setSelfDeaf(true);
+  //  });
   try {
     console.log(`Successfully logged in as ${client.user.tag}!`);
-
-    //   function pickStatus() {
-
+    //   uction pickStatus() {
     //    let status = ["BLACKOUT OFFICIAL", "bhelp | bsupport"];
-
     //    let Status = Math.floor(Math.random() * status.length);
-
-    client.user.setActivity("BЯΛVΣ丶ΩFFICIΛŁ", {
-      type: "STREAMING",
-
-      url: sserver
-    });
-
+    //   client.user.setActivity("BЯΛVΣ丶ΩFFICIΛŁ", {
+    //    type: "STREAMING",
+    //     url: sserver
+    //   });
     //  }
 
     client.on("message", async message => {
-      const prefixMention = new RegExp(`^<@!?${client.user.id}>( |)$`);
-
+      const prefixMention = new RegExp(`^<@!?${client}>( |)$`);
       if (message.content.match(prefixMention)) {
         let mention = new discord.MessageEmbed()
-
           .setTitle(client.user.username)
-
           .addField("PREFIX", `\`${prefix}\``)
-
           .addField("USAGE", `\`${prefix}help\``)
-
           .setColor("RANDOM")
-
           .setFooter(`Bot Mentioned By ${message.author.username}`);
-
         message.channel.send(mention);
-
         return;
       }
-
       if (message.author.bot) return;
-
       if (!message.guild) return;
-
       if (!message.content.startsWith(prefix)) return;
-
       if (!message.member)
         message.member = await message.guild.fetchMember(message);
-
       const args = message.content
-
         .slice(prefix.length)
-
         .trim()
-
         .split(/ +/g);
-
       const cmd = args.shift().toLowerCase();
-
       if (cmd.length === 0) return;
-
       let command = client.commands.get(cmd);
-
       if (!command) command = client.commands.get(client.aliases.get(cmd));
-
       if (command) command.run(client, message, args);
     });
-
     //  setInterval(pickStatus, 5000);
   } catch (err) {
     console.log(err);
   }
 });
 
-client.on("message", async message => {
+/*client.on("message", async message => {
   if (message.content.match(`^<@!?672027578181353473>( |)$`)) {
     return message.react(`764200230152830977`);
   }
@@ -175,7 +131,7 @@ client.on("guildMemberAdd", async member => {
   client.channels.cache.get("783674782335238154").send(msg);
 
   //  client.channels.cache.get(chx).send(attachment);
-});
+});*/
 
 client.login(process.env.TOKEN);
 
