@@ -1,4 +1,4 @@
-const { prefix, sserver } = require("./config.json");
+const { defprefix, sserver } = require("./config.json");
 const { config } = require("dotenv");
 const db = require("quick.db");
 const { CanvasSenpai } = require("canvas-senpai");
@@ -7,6 +7,15 @@ const discord = require("discord.js");
 const { GiveawaysManager } = require("discord-giveaways");
 const client = new discord.Client({
   disableEveryone: false
+});
+const PrefixModel = require("./models/prefix-model.js");
+const mongoose = require("mongoose");
+const mongopath = process.env.mong;
+mongoose.connect(mongopath, {
+  useNewUrlParser: true,
+  useUnifiedTopology: true,
+  useFindAndModify: false,
+  useCreateIndex: true
 });
 //require("./brvlogger.js");
 require("./uptime.js");
@@ -32,6 +41,14 @@ client.on("ready", async () => {
     //  }
 
     client.on("message", async message => {
+      const data = await PrefixModel.findOne({
+        GuildID: message.guild.id
+      });
+      if (data) {
+        prefix = data.Prefix;
+      } else {
+        prefix = defprefix;
+      }
       const prefixMention = new RegExp(`^<@!?${client}>( |)$`);
       if (message.content.match(prefixMention)) {
         let mention = new discord.MessageEmbed()
