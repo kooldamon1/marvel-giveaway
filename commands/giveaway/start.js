@@ -20,12 +20,13 @@ module.exports = {
     }
 
     // Giveaway channel
-    let giveawayChannel = message.mentions.channels.first();
+    let Channel = message.mentions.channels.first();
+    let giveawayChannel = message.guild.channels.cache.get(Channel.id);
+
     // If no channel is mentionned
     if (!giveawayChannel) {
       return message.channel.send(":x: You have to mention a valid channel!");
     }
-
     // Giveaway duration
     let giveawayDuration = args[1];
     // If the duration isn't valid
@@ -61,8 +62,10 @@ module.exports = {
       hostedBy: message.author,
       // Messages
       messages: {
-        giveaway: "<:marvel_party:815337878857973760><:marvel_party:815337878857973760> **GIVEAWAY** <:marvel_party:815337878857973760><:marvel_party:815337878857973760>",
-        giveawayEnded: "<:marvel_party:815337878857973760><:marvel_party:815337878857973760> **GIVEAWAY ENDED** <:marvel_party:815337878857973760><:marvel_party:815337878857973760>",
+        giveaway:
+          "<:marvel_party:815337878857973760><:marvel_party:815337878857973760> **GIVEAWAY** <:marvel_party:815337878857973760><:marvel_party:815337878857973760>",
+        giveawayEnded:
+          "<:marvel_party:815337878857973760><:marvel_party:815337878857973760> **GIVEAWAY ENDED** <:marvel_party:815337878857973760><:marvel_party:815337878857973760>",
         timeRemaining: "Time remaining: **{duration}**!",
         inviteToParticipate: "React with 🎉 to participate!",
         winMessage: "Congratulations, {winners}! You won **{prize}**!",
